@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #343a40;
+    background-color: #e9ecef;
+    padding-top: 0px;
+}
+.navbar-brand {
+    color: #343a40!important;
+}
+.jumbotron {
+    padding-top: 30px;
+}
+.countdown-div {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.card-table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.card-player {
+    text-align: left;
+}
+.card-link {
+    margin-left: 10px;
+    font-weight: 400;
+    min-width: 125px;
+    /*font-size: 1.775rem;*/
+    float: left;
+    color: #343a40;
+}
+.card-stat {
+    padding-left: 40px;
+}
+.card-body {
+    padding: 0px;
+    background-color: white;
+}
+.stat-card-header {
+    background-color: #343a40;
+    text-align: center;
+    padding: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: white;
+}
+.card-icon {
+    margin-right: 5px;
+}
+.card-button {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+/*  stop */
