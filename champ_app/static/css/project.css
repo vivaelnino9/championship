@@ -56,5 +56,16 @@ body {
     background-color: #343a40;
     border-color: #343a40;
 }
+.register-header {
+    text-align: center;
+    margin: 20px;
+}
+.required:after {
+    content: ' *';
+    color: red;
+}
+.team-form {
+    margin: 20px 0px 20px 0px;
+}
 
 /*  stop */

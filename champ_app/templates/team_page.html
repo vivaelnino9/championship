@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load staticfiles app_filters %}
+
+{% block content %}
+
+{% if user|has_no_team %}
+{% include 'team_register.html' %}
+{% else %}
+{{ user.team }}
+{% endif %}
+
+{% endblock %}

@@ -6,5 +6,6 @@ from champ_app import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^registration/$', views.registration, name='registration'),
+    url(r'^logout/$', views.logout, name='logout'),
+    url(r'^team/(?P<team_name>[\w|\W]+)/$',views.team, name='team'),
 ]
