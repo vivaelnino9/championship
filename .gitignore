@@ -8,3 +8,4 @@ logfile
 __pycache__
 notes.txt
 local_settings.py
+client_secret.json
