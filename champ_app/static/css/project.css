@@ -83,7 +83,7 @@ body {
 .form-submit {
     margin-bottom: 28px;
 }
-.container-fluid {
+.tournaments-page {
     padding: 0px;
     margin: 30px 0px 30px 0px;
     min-height: 530px;
@@ -97,6 +97,25 @@ body {
 .card-block {
     text-align: center;
     margin: 10px;
+}
+.team-page {
+    min-height: 587px;
+}
+.team-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.team-server {
+    color: #717477;
+}
+.roster-player {
+    text-align: center;
+}
+.roster-link {
+    font-size: 19px;
+}
+.history-link {
+    font-size: 12px;
 }
 
 /*  stop */

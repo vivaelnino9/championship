@@ -1,6 +1,7 @@
 import re
 
 from django.contrib.auth import logout as user_logout
+from django.core.exceptions import ObjectDoesNotExist
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
@@ -22,6 +23,10 @@ def tournaments(request):
     })
 
 def team(request,team_name):
+    try:
+        team = Team.objects.get(name=team_name)
+    except ObjectDoesNotExist:
+        team = None
     if request.method == 'POST':
         form = TeamForm(request.POST)
         if form.is_valid():
@@ -30,6 +35,7 @@ def team(request,team_name):
     else:
         form = TeamForm()
     return render(request,'team_page.html',{
+        'team':team,
         'form':form,
     })
 

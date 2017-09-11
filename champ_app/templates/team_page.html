@@ -6,7 +6,52 @@
 {% if user|has_no_team %}
 {% include 'team_register.html' %}
 {% else %}
-{{ user.team }}
+<div class="team-page">
+    <div class="team-info">
+      <h1 class="">{{ team.name }}</h1>
+      <h4 class="team-server">{{ team.get_server_display }}</h4>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 mb-4" style="margin:0px;">
+          <div class="stat-card">
+            <div class="card-body">
+              {% include 'info_table.html' %}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="stat-card">
+            <div class="card-body">
+              <h3 class="stat-card-header">Roster</h3>
+              {% include 'roster_table.html' %}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-4" style="margin:0px;">
+          <div class="stat-card">
+            <div class="card-body">
+              {% include 'stats_table.html' %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card text-center">
+            <div class="card-header">History</div>
+            <div class="card-block">
+              <h4 class="card-title">Legendary Tournament</h4>
+              <p class="card-text">1st place&nbsp;<i class="fa fa-trophy" aria-hidden="true"></i></p>
+              <a href="#" class="btn btn-primary history-link">View history</a>
+            </div>
+            <div class="card-footer text-muted">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 {% endif %}
 
 {% endblock %}
