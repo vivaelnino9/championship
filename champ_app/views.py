@@ -17,7 +17,11 @@ def logout(request):
     user_logout(request)
     return HttpResponseRedirect('/')
 
-def team(request,team_name):    
+def tournaments(request):
+    return render(request,'tournaments.html',{
+    })
+
+def team(request,team_name):
     if request.method == 'POST':
         form = TeamForm(request.POST)
         if form.is_valid():

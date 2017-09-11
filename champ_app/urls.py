@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^logout/$', views.logout, name='logout'),
     url(r'^team/(?P<team_name>[\w|\W]+)/$',views.team, name='team'),
+    url(r'^tournaments/$',views.tournaments, name='tournaments'),
 ]
