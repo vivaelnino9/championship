@@ -16,7 +16,7 @@ httplib2==0.10.3
 idna==2.6
 ipython==5.4.1
 ipython-genutils==0.2.0
-oauth2client==4.1.2
+oauth2client==1.5.2
 oauthlib==2.0.2
 olefile==0.44
 pathlib2==2.3.0
@@ -31,6 +31,7 @@ pyasn1-modules==0.1.4
 pycparser==2.18
 Pygments==2.2.0
 PyJWT==1.5.2
+pyOpenSSL==17.2.0
 python3-openid==3.1.0
 pytz==2017.2
 requests==2.18.4
