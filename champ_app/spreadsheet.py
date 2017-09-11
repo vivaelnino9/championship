@@ -4,12 +4,10 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 # use creds to create a client to interact with the Google Drive API
 scope = ['https://spreadsheets.google.com/feeds']
+creds_json = json.dumps(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
+creds = ServiceAccountCredentials.from_json_keyfile_name(creds_json, scope)
 # creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
-# creds = ServiceAccountCredentials.from_json_keyfile_name(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], scope)
-creds = ServiceAccountCredentials.make_creds(
-  scope='https://www.googleapis.com/auth/drive',
-  json_key_io= StringIO.new(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
-)
+
 client = gspread.authorize(creds)
 
 # Find a workbook by name and open the first sheet
