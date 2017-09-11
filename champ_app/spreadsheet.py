@@ -7,8 +7,8 @@ scope = ['https://spreadsheets.google.com/feeds']
 # creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
 # creds = ServiceAccountCredentials.from_json_keyfile_name(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], scope)
 creds = ServiceAccountCredentials.make_creds(
-  scope: 'https://www.googleapis.com/auth/drive',
-  json_key_io: StringIO.new(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
+  scope='https://www.googleapis.com/auth/drive',
+  json_key_io= StringIO.new(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 )
 client = gspread.authorize(creds)
 
