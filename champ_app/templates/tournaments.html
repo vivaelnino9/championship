@@ -1,41 +1,28 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
+{% load staticfiles app_filters %}
 
 {% block content %}
 <div class="container-fluid tournaments-page">
     <div class="row">
-      <div class="card" style="width: 15rem;">
+      {% for tournament in tournaments %}
+      <div class="card mx-auto" style="width: 15rem;">
         <img class="card-img-top" src="http://via.placeholder.com/238x135">
         <div class="card-block">
-          <h4 class="card-title">Legendary Tournament</h4>
-          <p class="card-text">Sphere (Dallas, TX)</p>
-          <a href="#" class="btn btn-primary">Sign up</a>
+          <h4 class="card-title">{{ tournament.name }}</h4>
+          <p class="card-text">{{ tournament.get_server_display|server_city }}</p>
+          <a href="{% url 'tournament_page' tournament.id %}" class="btn btn-primary">Sign up</a>
+        </div>
+        <div class="card-footer">
+          <p class="card-text">{{ tournament.date }}</p>
         </div>
       </div>
-      <div class="card" style="width: 15rem;">
-        <img class="card-img-top" src="http://via.placeholder.com/238x135">
+      {% empty %}
+      <div class="card" style="width:100%;">
         <div class="card-block">
-          <h4 class="card-title">Qualifying Tournament</h4>
-          <p class="card-text">Radius (Newark, NJ)</p>
-          <a href="#" class="btn btn-primary">Sign up</a>
+          No current tournaments
         </div>
       </div>
-      <div class="card" style="width: 15rem;">
-        <img class="card-img-top" src="http://via.placeholder.com/238x135">
-        <div class="card-block">
-          <h4 class="card-title">Qualifying Tournament</h4>
-          <p class="card-text">Centra (Fremont, CA)</p>
-          <a href="#" class="btn btn-primary">Sign up</a>
-        </div>
-      </div>
-      <div class="card" style="width: 15rem;">
-        <img class="card-img-top" src="http://via.placeholder.com/238x135">
-        <div class="card-block">
-          <h4 class="card-title">Qualifying Tournament</h4>
-          <p class="card-text">Sphere (Dallas, TX)</p>
-          <a href="#" class="btn btn-primary">Sign up</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
 </div>
 {% endblock %}

@@ -94,7 +94,7 @@ body {
 .card {
     margin-right: 34px;
 }
-.card-block {
+.card-block, .card-footer {
     text-align: center;
     margin: 10px;
 }

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load staticfiles app_filters %}
+
+{% block content %}
+<div class="container-fluid tournaments-page">
+    <div class="row">
+      <div class="card" style="width: 100%;">
+        <div class="card-header">{{ tournament.name }}&nbsp;-&nbsp;{{ tournament.get_server_display|server_city }}&nbsp;-&nbsp;{{ tournament.date|date:"d/m/y" }}</div>
+        <div class="card-block">
+          <h4 class="card-title">Tournament Sign up</h4>
+          <p class="card-text">{ description }</p>
+          <p class="card-text">{ payment }</p>
+          {% if user.is_anonymous %}
+          <a class="btn btn-primary" href="#" data-toggle="popover" title="" data-content="You must be signed in with a registered team to sign up for tournament">Sign up</a>
+          {% elif user.team is None %}
+          <a class="btn btn-primary" href="#" data-toggle="popover" title="" data-content="You must <a href='/team/None'>register</a> a team before signing up for a tournament" data-html="true">Sign up</a>
+          {% elif user.team.name|check_signup:tournament.abv %}
+          <div class="card" style="">
+            <div class="card-block">
+              Your team is all signed up!
+            </div>
+          </div>
+          {% else %}
+          <a href="#" data-team="{{ user.team }}" data-tour="{{ tournament.abv }}" class="btn btn-primary" id="submit">Sign up</a>
+          {% endif %}
+          <img src="https://s3.amazonaws.com/beamobile/Spinner.gif" id="loading-spinner" style="display:none;" alt="Loading" title="Loading" />
+        </div>
+      </div>
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+
+    $('#submit').click(function(){
+      $(this).hide();
+      $('#loading-spinner').show();
+      $.ajax({
+        url:'/tournament_signup/',
+        data : {
+          'team_name' : $(this).attr("data-team"),
+          'tournament' : $(this).attr("data-tour")
+        },
+        success : function(data) {
+            location.reload();
+        },
+      },)
+    });
+});
+
+</script>
+{% endblock %}

@@ -26,3 +26,15 @@ class TeamAdmin(admin.ModelAdmin):
     form = TeamAdminForm
 
 admin.site.register(Team,TeamAdmin)
+
+class TournamentAdminForm(forms.ModelForm):
+    model = Tournament
+
+class TournamentAdmin(admin.ModelAdmin):
+    list_display = ('name','server','date')
+    search_fields = ['name']
+    list_filter = ['server','date']
+    list_per_page = 20
+    form = TournamentAdminForm
+
+admin.site.register(Tournament,TournamentAdmin)
