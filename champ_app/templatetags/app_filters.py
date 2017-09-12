@@ -8,6 +8,7 @@ register = template.Library()
 @register.filter(name='has_no_team')
 # check if user has a registered team
 def has_no_team(user):
+    if user.is_anonymous(): return False
     return user.team is None
 
 @register.filter(name='required')
