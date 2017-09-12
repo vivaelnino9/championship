@@ -3,7 +3,7 @@
 
 {% block content %}
 
-{% if user|has_no_team %}
+{% if user|has_no_team:team %}
 {% include 'team_register.html' %}
 {% else %}
 <div class="team-page">
