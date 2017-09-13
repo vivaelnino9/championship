@@ -26,11 +26,11 @@ def enter_signup(team_name,tournament):
     column_b = s.col_values(2)
     for cell in column_a:
         if cell == '':
-            s.update_acell('A'+str(column_a.index(cell)+1), team_name)
+            s.update_acell('A'+str(column_a.index(cell)+1), tournament)
             break
     for cell in column_b:
         if cell == '':
-            s.update_acell('B'+str(column_a.index(cell)+1), tournament)
+            s.update_acell('B'+str(column_a.index(cell)+1), team_name)
             break
 def check_for_signup(team_name,tournament):
     sheet = get_sheet()
