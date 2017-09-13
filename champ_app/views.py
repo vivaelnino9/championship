@@ -27,15 +27,24 @@ def tournaments(request):
 def tournament_page(request,tournament_id):
     tournament = Tournament.objects.get(pk=tournament_id)
     return render(request,'tournament_page.html',{
-        'tournament':tournament
+        'tournament':tournament,
     })
 
 def tournament_signup(request):
     team_name = request.GET.get('team_name', None)
-    tournament = request.GET.get('tournament', None)
-    enter_signup(team_name,tournament) # spreadsheet.py
-    data = {'team_name':team_name,'tournament':tournament }
+    tournament_abv = request.GET.get('tournament', None)
+    add = request.GET.get('add', None)
+    team = Team.objects.get(name=team_name)
+    tournament = Tournament.objects.get(abv=tournament_abv)
+    if add == 'true':
+        enter_signup(team_name,tournament_abv) # spreadsheet.py
+        team.tournaments.add(tournament)
+    else:
+        remove_signup(team_name,tournament_abv) # spreadsheet.py
+        team.tournaments.remove(tournament)
+    data = {'team_name':team_name,'tournament':tournament_abv }
     return JsonResponse(data)
+
 def team(request,team_name):
     try:
         team = Team.objects.get(name=team_name)

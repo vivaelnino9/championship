@@ -33,5 +33,7 @@ def server_city(server):
 
 @register.filter(name='check_signup')
 # check if team is already signed up for tournament
-def check_signup(team_name,tournament):
-    return check_for_signup(team_name,tournament)
+def check_signup(team_name,tournament_abv):
+    tournament = Tournament.objects.get(abv=tournament_abv)
+    team = Team.objects.get(name=team_name)
+    return team in tournament.team_set.all()

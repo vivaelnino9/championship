@@ -58,6 +58,11 @@ class Team(models.Model):
         upload_to='photos',
         blank=True
     )
+    tournaments = models.ManyToManyField(
+        Tournament,
+        verbose_name="Tournaments",
+        blank=True
+    )
 
     class Meta:
         db_table = "rosters"

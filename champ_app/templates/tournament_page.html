@@ -15,9 +15,12 @@
           {% elif user.team is None %}
           <a class="btn btn-primary" href="#" data-toggle="popover" title="" data-content="You must <a href='/team/None'>register</a> a team before signing up for a tournament" data-html="true">Sign up</a>
           {% elif user.team.name|check_signup:tournament.abv %}
-          <div class="card" style="">
+          <div class="card" id="signed-up">
             <div class="card-block">
               Your team is all signed up!
+            </div>
+            <div class="card-footer">
+              <a href="#" data-team="{{ user.team }}" data-tour="{{ tournament.abv }}" id="remove" class="btn btn-primary">Remove</a>
             </div>
           </div>
           {% else %}

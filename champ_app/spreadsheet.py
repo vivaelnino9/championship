@@ -22,24 +22,25 @@ def enter_signup(team_name,tournament):
     # find landing sheet 2 and place team name and tournament in next available cells
     sheet = get_sheet()
     s = sheet.worksheet("Landing Sheet 2")
+
     column_a = s.col_values(1)
-    column_b = s.col_values(2)
     for cell in column_a:
-        if cell == '':
-            s.update_acell('A'+str(column_a.index(cell)+1), tournament)
+        row = str(column_a.index(cell)+1)
+        if cell == '' and s.acell('B'+row).value == '':
+            s.update_acell('A'+row, tournament)
+            s.update_acell('B'+row, team_name)
             break
-    for cell in column_b:
-        if cell == '':
-            s.update_acell('B'+str(column_a.index(cell)+1), team_name)
-            break
-def check_for_signup(team_name,tournament):
+
+def remove_signup(team_name,tournament):
+    # find signup for tournament and remove it
     sheet = get_sheet()
     s = sheet.worksheet("Landing Sheet 2")
-    column_a = s.col_values(1)
-    column_b = s.col_values(2)
-    matched_cells = s.findall(team_name)
-    for cell in matched_cells:
-        tour = s.acell('B'+str(cell.row)).value
+
+    team_matches = s.findall(team_name)
+    for team in team_matches:
+        row = str(team.row)
+        tour = s.acell('A'+row).value
         if tour == tournament:
-            return True
-    return False
+            s.update_acell('A'+row, '')
+            s.update_acell('B'+row, '')
+            break
