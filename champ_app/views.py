@@ -45,6 +45,13 @@ def tournament_signup(request):
     data = {'team_name':team_name,'tournament':tournament_abv }
     return JsonResponse(data)
 
+def roster_change(request):
+    team_name = name=request.GET.get('team_name', None)
+    new_players = check_for_new_players(team_name,request)
+    if new_players: change_roster(team_name,new_players)
+    data = {'sucess':new_players}
+    return JsonResponse(data)
+
 def team(request,team_name):
     try:
         team = Team.objects.get(name=team_name)
@@ -55,6 +62,7 @@ def team(request,team_name):
         if form.is_valid():
             team = form.save()
             User.objects.filter(email=request.user.email).update(team=team)
+            register_team(team)
             return HttpResponseRedirect('/team/'+team.name)
     else:
         form = TeamForm()
@@ -64,3 +72,29 @@ def team(request,team_name):
     })
 
 ####### HELPER FUNCTIONS #######
+def check_for_new_players(team_name,request):
+    new_players = {}
+    team = Team.objects.get(name=team_name)
+    existing_players = team.get_players(True)
+    for field,player in existing_players.items():
+        request_player = request.GET.get(field, None)
+        if request_player != player:
+            new_players[field] = request_player
+
+    new_field = request.GET.get('new_field',None)
+    new_player = request.GET.get('new_player',None)
+    if new_player != '' and new_player is not None:
+        new_players[new_field] = new_player
+
+    return new_players
+
+def change_roster(team_name,new_players):
+    team = Team.objects.filter(name=team_name)
+    for field,player in new_players.items():
+        if field == 'captain': team.update(captain=player)
+        elif field == 'player1': team.update(player1=player)
+        elif field == 'player2': team.update(player2=player)
+        elif field == 'player3': team.update(player3=player)
+        elif field == 'player4': team.update(player4=player)
+        else: pass
+    if new_players: edit_roster(team_name,new_players)

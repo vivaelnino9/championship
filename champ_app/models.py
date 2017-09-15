@@ -69,6 +69,22 @@ class Team(models.Model):
     def __str__(self):
         return self.name
 
+    def get_players(self,include_fields):
+        # get players on team, specify wether returned result needs to be in a
+        # dict or list depending on the need for field names
+        team_fields = Team.objects.filter(name=self.name).values()
+        avoid = ['id','name','stats_id','server','logo']
+        players_dict = {}
+        players_list = []
+        for fields in team_fields:
+            for field,value in fields.items():
+                if value and field not in avoid:
+                    players_dict[field] = value if include_fields else players_list.append(value)
+        if include_fields: return players_dict
+        else: return players_list
+
+
+
 class User(AbstractUser):
     email = models.EmailField(verbose_name="Email",max_length=255)
     team = models.OneToOneField(

@@ -40,6 +40,8 @@ class TeamForm(forms.ModelForm):
                 self.add_error(field, msg)
         return cleaned_data
 
+    # CHANGE get_existing_players TO USE GET_PLAYERS()
+
     def get_existing_players(self):
         team_fields = Team.objects.all().values()
         avoid = ['id','name','stats_id','server','logo']

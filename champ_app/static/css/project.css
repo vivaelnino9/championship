@@ -36,7 +36,7 @@ body {
 .card-player {
     text-align: left;
 }
-.card-link {
+.card-link, .add-player-link {
     margin-left: 10px;
     font-weight: 400;
     min-width: 125px;
@@ -58,6 +58,58 @@ body {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     color: white;
+}
+.add-section {
+    display: none;
+}
+.add-player-link:hover {
+    background-color: #f3f3f3;
+}
+.add-player-link {
+    border: 1px solid black;
+    margin-left: 25px;
+}
+.add-cancel-text {
+    display: none;
+    float: left;
+}
+.edit-link, .edit-cancel {
+    font-size: 14px;
+    color: white;
+    right: 25px;
+    top: 10px;
+    position: absolute;
+    text-decoration: none;
+}
+.edit-cancel {
+    display: none;
+    cursor: pointer;
+}
+.edit-link:hover, .add-player-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+.edit-player, .edit-confirm {
+    display: none;
+    float: left;
+}
+.edit-player-text, .add-player-text {
+    display: none;
+    text-align: center;
+    resize: none;
+}
+.edit-save {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    display: none;
+}
+#loading-spinner {
+    display: none;
+    height: 90px;
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
 }
 .card-icon {
     margin-right: 5px;

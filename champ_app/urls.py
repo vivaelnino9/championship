@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^tournaments/$',views.tournaments, name='tournaments'),
     url(r'^tournaments/(?P<tournament_id>[\w|\W]+)/$',views.tournament_page, name='tournament_page'),
     url(r'^tournament_signup/$', views.tournament_signup, name='tournament_signup'),
+    url(r'^roster_change/$', views.roster_change, name='roster_change'),
 ]
