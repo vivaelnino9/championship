@@ -1,3 +1,5 @@
+import collections
+
 from django import forms
 
 from .models import *
@@ -17,37 +19,31 @@ class TeamForm(forms.ModelForm):
 
     def clean(self):
         cleaned_data = super(TeamForm, self).clean()
-        name = cleaned_data.get('name')
-        captain = cleaned_data.get('captain')
-        player1 = cleaned_data.get('player1')
-        player2 = cleaned_data.get('player2')
-        player3 = cleaned_data.get('player3')
-        player4 = cleaned_data.get('player4')
-        server = cleaned_data.get('server')
 
-        if Team.objects.filter(name=name).exists():
+        if Team.objects.filter(name=cleaned_data.get('name')).exists():
             msg = 'That team name is already being used by another team!'
             self.add_error('name', msg)
 
         players = {
-            'captain':captain,'player1':player1,'player2':player2,
-            'player3':player3,'player4':player4
+            'captain':cleaned_data.get('captain'),
+            'player1':cleaned_data.get('player1'),
+            'player2':cleaned_data.get('player2'),
+            'player3':cleaned_data.get('player3'),
+            'player4':cleaned_data.get('player4')
         }
+        self.check_players(players)
 
-        for field,player in players.items():
-            if player in self.get_existing_players():
-                msg = player+ ' is already on another team!'
-                self.add_error(field, msg)
         return cleaned_data
 
-    # CHANGE get_existing_players TO USE GET_PLAYERS()
+    def check_players(self,players):
+        existing_players = self.get_existing_players()
+        for field,player in players.items():
+            msg = player + ' is not available! Player might be on another team or already listed'
+            self.add_error(field, msg) if player in existing_players else existing_players.append(player)
 
     def get_existing_players(self):
-        team_fields = Team.objects.all().values()
-        avoid = ['id','name','stats_id','server','logo']
         existing_players = []
-        for fields in team_fields:
-            for field,value in fields.items():
-                if value and field not in avoid:
-                    existing_players.append(value)
+        for team in Team.objects.all():
+            for player in team.get_players(False):
+                existing_players.append(player)
         return existing_players
