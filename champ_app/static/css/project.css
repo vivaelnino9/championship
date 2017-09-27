@@ -9,6 +9,9 @@ body {
     position: relative;
     min-height: 100%;
 }
+footer {
+    background-color: #656565;
+}
 .footer, .push {
     height: 50px;
 }
@@ -56,9 +59,25 @@ body {
     color: #8a8a8a;
     border-color: #8a8a8a;
 }
-.donate:hover {
+.donate:hover, .card-button:hover {
     background-color: #75787b;
     border-color: #75787b;
+}
+.sign-in:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.sign-up:hover {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+.register:hover {
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+}
+.remove:hover {
+    background-color: #d9534f;
+    border-color: #d9534f;
 }
 .card-table {
     margin-left: auto;
@@ -146,8 +165,9 @@ body {
     margin-right: 5px;
 }
 .card-button {
-    background-color: #343a40;
-    border-color: #343a40;
+    background-color: #fff;
+    border-color: #b5b2b2;
+    color: #525050;
 }
 .register-header {
     text-align: center;
@@ -228,7 +248,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #343a40;
+    background-color: #656565;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -238,7 +258,7 @@ body {
     text-decoration: none;
     font-size: 25px;
     /*color: #b5b5b5;*/
-    color: #343a40;
+    color: #656565;
     display: block;
     transition: 0.3s;
 }
@@ -263,7 +283,7 @@ body {
 .sidebar-button {
     font-size: 30px;
     cursor: pointer;
-    background-color: #343a40;
+    background-color: #656565;
     color: #b5b5b5;
     padding: 5px;
     position: fixed;

@@ -10,7 +10,7 @@
         <div class="card-block">
           <h4 class="card-title">{{ tournament.name }}</h4>
           <p class="card-text">{{ tournament.get_server_display|server_city }}</p>
-          <a href="{% url 'tournament_page' tournament.id %}" class="btn btn-primary">Sign up</a>
+          <a href="{% url 'tournament_page' tournament.id %}" class="card-button btn btn-primary">Sign up</a>
         </div>
         <div class="card-footer">
           <p class="card-text">{{ tournament.date }}</p>

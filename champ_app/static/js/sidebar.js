@@ -7,7 +7,7 @@ function openNav() {
 }
 
 function closeNav() {
-    $('#mySidenav a, #mySidenav p').css('color','#343a40');
+    $('#mySidenav a, #mySidenav p').css('color','#656565');
     setTimeout(function(){
       $('#mySidenav').animate({width:'0px'}, 100);
     }, 120);

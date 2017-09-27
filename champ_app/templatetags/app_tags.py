@@ -41,18 +41,18 @@ def signup_error_fields(context,user,tournament):
         errors['message'] = "You need to log in to sign up for a tournament!"
         errors['redirect_url'] = "/login/google-oauth2/?next="+request.path
         errors['button_text'] = "Sign In"
-        errors['button_class'] = "primary"
+        errors['button_class'] = "sign-in"
     elif user.team is None:
         errors['message'] = "You need a registered team to sign up!"
         errors['redirect_url'] = request.build_absolute_uri(reverse('team',kwargs={'team_name': None}))
         errors['button_text'] = "Register"
-        errors['button_class'] = "info"
+        errors['button_class'] = "register"
     else:
         # Users team is signed up already
         errors['message'] = "Your team is all signed up!"
         errors['redirect_url'] = request.build_absolute_uri(reverse('tournament_signup',kwargs={'tournament_id':tournament.id,'team_name':user.team.name,'action':'remove'}))
         errors['button_text'] = "Remove"
-        errors['button_class'] = "danger"
+        errors['button_class'] = "remove"
     return errors
 
 @register.simple_tag(name='signup_link',takes_context=True)

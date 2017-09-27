@@ -10,13 +10,14 @@
           <h4 class="card-title">Tournament Sign up</h4>
           <p class="card-text">{% templatetag openvariable %}&nbsp;description&nbsp;{% templatetag closevariable %}</p>
           {% if user|can_signup:tournament %}
-          <a href="{% signup_link tournament user %}" class="btn btn-primary">Sign up</a>
+          <a href="{% signup_link tournament user %}" class="sign-up card-button btn btn-primary">Sign up</a>
           {% else %}
           {% signup_error_fields user tournament as errors %}
           <div class="card" id="signed-up">
             <div class="card-block">
               <p class="card-text">{{ errors.message }}</p>
-              <a href="{{ errors.redirect_url }}" id="{{ errors.button_text }}" class="btn btn-{{ errors.button_class }}">{{ errors.button_text }}</a>
+              <!-- <a href="{{ errors.redirect_url }}" id="{{ errors.button_text }}" class="btn btn-{{ errors.button_class }}">{{ errors.button_text }}</a> -->
+              <a href="{{ errors.redirect_url }}" id="{{ errors.button_text }}" class="{{ errors.button_class }} card-button btn btn-primary">{{ errors.button_text }}</a>
             </div>
             {% if tournament.pay and errors.button_text == 'Remove' %}
             <div class="card-footer text-muted">
