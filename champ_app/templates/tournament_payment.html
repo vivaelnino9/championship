@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles tournament_filters app_tags %}
+
+{% block content %}
+<div class="container-fluid tournaments-page">
+    <div class="row">
+      <div class="card" style="width: 100%;">
+        <div class="card-header">{{ tournament.name }}&nbsp;-&nbsp;{{ tournament.get_server_display|server_city }}&nbsp;-&nbsp;{{ tournament.date|date:"d/m/y" }}</div>
+        <div class="card-block">
+          <h3 class="card-title">Payment</h3>
+          <p class="card-title" style="font-size:12px">The tournament costs ${{ tournament.cost }} per team</p>
+            {% paypal_payment_link tournament as payment %}
+          <span style="background-color:beige;"><a href="{{ payment.link }}"><img class="paypal-img {{ payment.disabled }}"src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal" /></a></span>
+        </div>
+        <a href="{% url 'tournament_page' tournament.id %}" class="btn btn-secondary">back</a>
+      </div>
+    </div>
+</div>
+{% endblock %}

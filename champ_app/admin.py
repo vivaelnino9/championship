@@ -38,3 +38,15 @@ class TournamentAdmin(admin.ModelAdmin):
     form = TournamentAdminForm
 
 admin.site.register(Tournament,TournamentAdmin)
+
+class PaymentAdminForm(forms.ModelForm):
+    model = Payment
+
+class PaymentAdmin(admin.ModelAdmin):
+    list_display = ('team','ID','paid','tournament')
+    search_fields = ['ID']
+    list_filter = ['team','paid','tournament']
+    list_per_page = 20
+    form = PaymentAdminForm
+
+admin.site.register(Payment,PaymentAdmin)

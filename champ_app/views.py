@@ -9,10 +9,19 @@ from django.shortcuts import render
 from .choices import *
 from .forms import *
 from .models import *
+from .paypal import *
 from .spreadsheet import *
 
 def index(request):
     return render(request,'index.html',{
+    })
+
+def rules(request):
+    return render(request,'rules.html',{
+    })
+
+def league_info(request):
+    return render(request,'league_info.html',{
     })
 
 def logout(request):
@@ -30,20 +39,22 @@ def tournament_page(request,tournament_id):
         'tournament':tournament,
     })
 
-def tournament_signup(request):
-    team_name = request.GET.get('team_name', None)
-    tournament_abv = request.GET.get('tournament', None)
-    add = request.GET.get('add', None)
-    team = Team.objects.get(name=team_name)
-    tournament = Tournament.objects.get(abv=tournament_abv)
-    if add == 'true':
-        enter_signup(team_name,tournament_abv) # spreadsheet.py
-        team.tournaments.add(tournament)
-    else:
-        remove_signup(team_name,tournament_abv) # spreadsheet.py
-        team.tournaments.remove(tournament)
-    data = {'team_name':team_name,'tournament':tournament_abv }
-    return JsonResponse(data)
+def tournament_payment(request,tournament_id):
+    tournament = Tournament.objects.get(pk=tournament_id)
+    return render(request,'tournament_payment.html',{
+        'tournament':tournament,
+    })
+
+def tournament_signup(request,tournament_id,team_name,action):
+    try:
+        team = Team.objects.get(name=team_name)
+        tournament = Tournament.objects.get(pk=tournament_id)
+    except ObjectDoesNotExist:
+        return HttpResponseRedirect(reverse('tournament_page',kwargs={'tournament_id':tournament_id}))
+    add_tournament(team,tournament) if action == 'add' else remove_tournament(team,tournament)
+
+    return HttpResponseRedirect(reverse('tournament_page',kwargs={'tournament_id':tournament_id}))
+
 
 def roster_change(request):
     team_name = name=request.GET.get('team_name', None)
@@ -98,3 +109,29 @@ def change_roster(team_name,new_players):
         elif field == 'player4': team.update(player4=player)
         else: pass
     if new_players: edit_roster(team_name,new_players)
+
+def add_tournament(team,tournament):
+    enter_signup(team.name,tournament.abv) # spreadsheet.py
+    team.tournaments.add(tournament)
+    if tournament.pay: add_payment(team,tournament)
+
+def remove_tournament(team,tournament):
+    remove_signup(team.name,tournament.abv) # spreadsheet.py
+    team.tournaments.remove(tournament)
+    if tournament.pay: remove_payment(team,tournament)
+
+def add_payment(team,tournament):
+    p = Payment.objects.filter(team=team,tournament=tournament)
+    payment = paypalrestsdk.Payment.find(p.first().ID)
+    payer_id = payment['payer']['payer_info']['payer_id']
+    if payment.execute({"payer_id": payer_id}):
+        sale_id = payment['transactions'][0]['related_resources'][0]['sale']['id']
+        p.update(sale_id=sale_id)
+        p.update(paid=True)
+    else:
+      print(payment.error) # Error Hash
+
+def remove_payment(team,tournament):
+    p = Payment.objects.get(team=team,tournament=tournament)
+    refund_payment(p) # paypal.py
+    p.delete()

@@ -150,6 +150,17 @@ body {
     text-align: center;
     margin: 10px;
 }
+.refund-message {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+.paypal-img {
+    margin: 20px;
+}
+.disabled {
+    opacity: .1;
+    cursor: default;
+}
 .team-page {
     min-height: 587px;
 }

@@ -1,5 +1,4 @@
 import datetime
-
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
@@ -8,6 +7,12 @@ from .choices import *
 class Tournament(models.Model):
     name = models.CharField(verbose_name="Name",max_length=50)
     abv = models.CharField(verbose_name="Abbreviation",max_length=10)
+    full = models.CharField(verbose_name="Full Name",max_length=50)
+    pay = models.BooleanField(verbose_name="Pay",default=False)
+    cost = models.CharField(
+        verbose_name="Cost",
+        max_length=10,
+        blank=True,null=True)
     server = models.IntegerField(
         verbose_name="Server",
         choices=SERVER_CHOICES,
@@ -19,11 +24,47 @@ class Tournament(models.Model):
         upload_to='photos',
         blank=True
     )
+    Qualified = models.ManyToManyField(
+        "champ_app.Team",
+        verbose_name="Qualified Teams",
+        blank=True
+    )
 
     class Meta:
         db_table = "tournaments"
     def __str__(self):
         return self.name
+
+class Payment(models.Model):
+    team = models.ForeignKey(
+        "champ_app.Team",
+        verbose_name='Team',
+        related_name='team_payment',
+        null=True,
+        on_delete=models.CASCADE
+    )
+    ID = models.CharField(verbose_name="ID",max_length=50)
+    sale_id = models.CharField(
+        verbose_name="Sale ID",
+        max_length=50,
+        blank=True,null=True
+    )
+    amount = models.CharField(
+        verbose_name="Amount",
+        max_length=50,
+        blank=True,null=True
+    )
+    paid = models.BooleanField(verbose_name="Paid",default=False)
+    approval_url = models.CharField(verbose_name="Approval Url",max_length=200)
+    tournament = models.ForeignKey(
+        Tournament,
+        verbose_name='Tournament',
+        null=True,
+        on_delete=models.SET_NULL
+    )
+
+    def __str__(self):
+        return self.ID
 
 class Team(models.Model):
     name = models.CharField(verbose_name="Name",max_length=50)
@@ -83,7 +124,8 @@ class Team(models.Model):
         if include_fields: return players_dict
         else: return players_list
 
-
+    def get_payment(self,tournament):
+        return Payment.objects.filter(team=self,tournament=tournament)
 
 class User(AbstractUser):
     email = models.EmailField(verbose_name="Email",max_length=255)
