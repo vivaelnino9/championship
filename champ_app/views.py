@@ -1,5 +1,5 @@
 import re
-
+import datetime
 from django.contrib.auth import logout as user_logout
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.urlresolvers import reverse
@@ -13,7 +13,9 @@ from .paypal import *
 from .spreadsheet import *
 
 def index(request):
+    next_tournament = Tournament.objects.filter(date__gt=datetime.date.today()).order_by("date").first()
     return render(request,'index.html',{
+        'next_tournament':next_tournament
     })
 
 def rules(request):

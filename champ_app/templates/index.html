@@ -5,7 +5,15 @@
   <header class="jumbotron my-4">
     <div class="countdown-div">
       <div id="clock"></div>
-      <p>until next tournament</p>
+      <div class="until-div">
+        <p class="until-until">UNTIL</p>
+        <p class="until-tournament">{{ next_tournament.full }}</p>
+      </div>
+      <div class="prize-div">
+        <p class="prize-prize">PRIZE POOL</p>
+        <p class="prize-pool">$1000</p>
+      </div>
+      <a href="#" class="donate btn btn-outline-primary">Donate</a>
     </div>
     <iframe src="//bracketcloud.com/embed/103815?banner=false&brkbg=fffff" width="100%" height="500" scrolling="no" frameborder="0" allowtransparency="true" title="BracketCloud Tournament" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br/><small><span style="color:#a3a3a3">Updates every minute - </span><a href="//bracketcloud.com/tournament/103815" style="color:#0088cc;text-align:left" target="_blank">View full tournament</a></small>
   </header>
@@ -64,7 +72,8 @@
   <!-- /.row -->
 </div>
 <script>
-$('#clock').countdown('2017/08/24', function(event) {
+
+$('#clock').countdown('{{ next_tournament.date|date:"Y/m/d" }}', function(event) {
   var $this = $(this).html(event.strftime(''
     + '<h2><span style="font-size:45px;">%d</span> days '
     + '<span style="font-size:45px;">%H</span> hr '

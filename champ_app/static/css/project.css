@@ -28,10 +28,41 @@ body {
     background-color: white;
     padding: 10px;
 }
+.until-div {
+    background-color: aliceblue;
+}
+.until-until {
+    font-size: 14px;
+    font-family: monospace;
+    margin-bottom: 5px;
+}
+.until-tournament {
+    font-size: 20px;
+}
+.prize-div {
+    background-color: beige;
+}
+.prize-prize {
+    font-size: 14px;
+    margin-bottom: 0px;
+    font-family: monospace;
+}
+.prize-pool {
+    font-size: 38px;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+.donate {
+    color: #8a8a8a;
+    border-color: #8a8a8a;
+}
+.donate:hover {
+    background-color: #75787b;
+    border-color: #75787b;
+}
 .card-table {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
 }
 .card-player {
     text-align: left;
@@ -52,7 +83,7 @@ body {
     background-color: white;
 }
 .stat-card-header {
-    background-color: #343a40;
+    background-color: #75787b;
     text-align: center;
     padding: 3px;
     border-top-left-radius: 4px;
@@ -146,9 +177,13 @@ body {
 .card {
     margin-right: 34px;
 }
-.card-block, .card-footer {
+.card-block {
     text-align: center;
     margin: 10px;
+}
+.card-footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.06);
 }
 .refund-message {
     margin-bottom: 0px;
@@ -169,7 +204,7 @@ body {
     text-align: center;
 }
 .team-server {
-    color: #717477;
+    color: #989898;
 }
 .roster-player {
     text-align: center;
