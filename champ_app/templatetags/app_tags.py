@@ -46,7 +46,7 @@ def signup_error_fields(context,user,tournament):
     request = context['request']
     errors = {}
     if user.is_anonymous():
-        errors['message'] = "You need to log in to sign up for a tournament!"
+        errors['message'] = "You need to be logged in to sign up for a tournament!"
         errors['redirect_url'] = "/login/google-oauth2/?next="+request.path
         errors['button_text'] = "Sign In"
         errors['button_class'] = "sign-in"
