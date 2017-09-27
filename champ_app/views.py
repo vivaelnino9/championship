@@ -26,6 +26,10 @@ def league_info(request):
     return render(request,'league_info.html',{
     })
 
+def donate(request):
+    return render(request,'donate.html',{
+    })
+
 def logout(request):
     user_logout(request)
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))

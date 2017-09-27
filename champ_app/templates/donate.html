@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid donation-page">
+    <div class="row">
+      <div class="card" style="width: 100%;">
+        <div class="card-header">Donate</div>
+        <div class="card-block">
+          <h4 class="card-title">Make a Donation</h4>
+          <p class="donation-message card-text">All donations will go towards tournament prize pools</p>
+          <span style="background-color:beige;"><a href="#"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal" /></a></span>
+        </div>
+        <div class="card-footer text-muted">
+          <p class="footer-message">Click paypal image to proceed to payment</p>
+        </div>
+        <a href="{% url 'index' %}" class="btn btn-secondary">back</a>
+      </div>
+    </div>
+</div>
+{% endblock %}

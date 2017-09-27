@@ -186,10 +186,13 @@ footer {
 .form-submit {
     margin-bottom: 28px;
 }
-.tournaments-page {
+.tournaments-page, .donation-page {
     padding: 0px;
     margin: 30px 0px 30px 0px;
     min-height: 530px;
+}
+.donation-message {
+    font-size: 14px;
 }
 .card:first-of-type {
     margin-left: 34px;
@@ -205,7 +208,7 @@ footer {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.06);
 }
-.refund-message {
+.footer-message {
     margin-bottom: 0px;
     font-size: 12px;
 }
