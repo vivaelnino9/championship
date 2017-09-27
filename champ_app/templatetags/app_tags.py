@@ -39,7 +39,7 @@ def signup_error_fields(context,user,tournament):
     errors = {}
     if user.is_anonymous():
         errors['message'] = "You need to log in to sign up for a tournament!"
-        errors['redirect_url'] = "/login/google-oauth2/"
+        errors['redirect_url'] = "/login/google-oauth2/?next="+request.path
         errors['button_text'] = "Sign In"
         errors['button_class'] = "primary"
     elif user.team is None:

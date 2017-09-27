@@ -26,7 +26,7 @@ def league_info(request):
 
 def logout(request):
     user_logout(request)
-    return HttpResponseRedirect('/')
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 def tournaments(request):
     tournaments = Tournament.objects.all()

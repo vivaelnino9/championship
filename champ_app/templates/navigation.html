@@ -23,7 +23,7 @@
     <ul class="navbar-nav">
       {% if user.is_anonymous %}
       <li class="nav-item">
-        <a class="nav-link" href="{% url "social:begin" "google-oauth2" %}">Register/Log in</a>
+        <a class="nav-link" href="{% url "social:begin" "google-oauth2" %}?next={{request.path}}">Register/Log in</a>
       </li>
       {% else %}
       <li class="nav-item dropdown">
