@@ -3,33 +3,29 @@
 
 {% block content %}
 <div class="container-fluid tournaments-page">
-    <div class="row">
-      <div class="card" style="width: 100%;">
-        <div class="card-header">{{ tournament.name }}&nbsp;-&nbsp;{{ tournament.get_server_display|server_city }}&nbsp;-&nbsp;{{ tournament.date|date:"m/d/y" }}</div>
-        <div class="card-block">
-          <h4 class="card-title">Tournament Sign up</h4>
-          <p class="card-text">{% templatetag openvariable %}&nbsp;description&nbsp;{% templatetag closevariable %}</p>
-          {% if user|can_signup:tournament %}
-          <a href="{% signup_link tournament user %}" class="sign-up card-button btn btn-primary">Sign up</a>
-          {% else %}
-          {% signup_error_fields user tournament as errors %}
-          <div class="card" id="signed-up">
-            <div class="card-block">
-              <p class="card-text">{{ errors.message }}</p>
-              <!-- <a href="{{ errors.redirect_url }}" id="{{ errors.button_text }}" class="btn btn-{{ errors.button_class }}">{{ errors.button_text }}</a> -->
-              <a href="{{ errors.redirect_url }}" id="{{ errors.button_text }}" class="{{ errors.button_class }} card-button btn btn-primary">{{ errors.button_text }}</a>
-            </div>
-            {% if tournament.pay and errors.button_text == 'Remove' %}
-            <div class="card-footer text-muted">
-              <p class="refund-message">Signup payment will be refunded in full</p>
-            </div>
-            {% endif %}
+  <div class="row">
+    <div class="card" style="width: 100%;">
+      <div class="card-header">{{ tournament.name }}&nbsp;-&nbsp;{{ tournament.get_server_display|server_city }}&nbsp;-&nbsp;{{ tournament.date|date:"m/d/y" }}</div>
+      <div class="card-block">
+        <h4 class="card-title">Tournament Sign up</h4>
+        <p class="card-text">{% templatetag openvariable %}&nbsp;description&nbsp;{% templatetag closevariable %}</p>
+        {% if user|can_signup:tournament %}
+        <a href="{% signup_link user tournament %}" class="sign-up card-button btn btn-primary">Sign up</a>
+        {% else %}
+        {% signup_error_fields user tournament as errors %}
+        <div class="card" id="signed-up">
+          <div class="card-block">
+            <p class="card-text">{{ errors.message }}</p>
+            <a href="{{ errors.redirect_url }}" id="{{ errors.button_text }}" class="{{ errors.button_class }} card-button btn btn-primary">{{ errors.button_text }}</a>
           </div>
-          {% endif %}
-          <img src="https://s3.amazonaws.com/beamobile/Spinner.gif" id="loading-spinner" style="display:none;" alt="Loading" title="Loading" />
         </div>
-        <a href="{% url 'tournaments' %}" class="btn btn-secondary">Back</a>
+        {% endif %}
       </div>
+      <div class="card-footer text-muted">
+        <p class="footer-message">{% footer_message user tournament %}</p>
+      </div>
+      <a href="{% url 'tournaments' %}" class="btn btn-secondary">Back</a>
     </div>
+  </div>
 </div>
 {% endblock %}

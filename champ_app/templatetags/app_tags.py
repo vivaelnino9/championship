@@ -32,6 +32,14 @@ def is_on(context,nav_link):
 
 # Tournament Page
 
+@register.simple_tag(name='signup_link',takes_context=True)
+def signup_link(context,user,tournament):
+    request = context['request']
+    if tournament.pay:
+        return request.build_absolute_uri(reverse('tournament_payment',kwargs={'tournament_id':tournament.id}))
+    else:
+        return request.build_absolute_uri(reverse('tournament_signup',kwargs={'tournament_id':tournament.id,'team_name':user.team.name,'action':'add'}))
+
 @register.simple_tag(name='signup_error_fields',takes_context=True)
 # get tournament signup errors based on user
 def signup_error_fields(context,user,tournament):
@@ -55,14 +63,15 @@ def signup_error_fields(context,user,tournament):
         errors['button_class'] = "remove"
     return errors
 
-@register.simple_tag(name='signup_link',takes_context=True)
-def signup_link(context,tournament,user):
-    request = context['request']
-    if tournament.pay:
-        return request.build_absolute_uri(reverse('tournament_payment',kwargs={'tournament_id':tournament.id}))
+@register.simple_tag(name='footer_message')
+def footer_message(user,tournament):
+    if user.is_anonymous() or user.team is None: return 'Click button to proceed'
+    elif user.team.is_signed_up(tournament):
+        if tournament.pay: return 'Removing sign up will refund payment in total'
+        else: return 'Click to remove your sign up'
     else:
-        return request.build_absolute_uri(reverse('tournament_signup',kwargs={'tournament_id':tournament.id,'team_name':user.team.name,'action':'add'}))
-
+        if tournament.pay: return 'Clicking Sign up will proceed to payment page'
+        else: return 'Click to sign up for tournament'
 @register.simple_tag(name='paypal_payment_link',takes_context=True)
 def paypal_payment_link(context,tournament):
     request = context['request']

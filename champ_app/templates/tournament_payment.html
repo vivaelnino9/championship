@@ -12,6 +12,9 @@
             {% paypal_payment_link tournament as payment %}
           <span style="background-color:beige;"><a href="{{ payment.link }}"><img class="paypal-img {{ payment.disabled }}"src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal" /></a></span>
         </div>
+        <div class="card-footer text-muted">
+          <p class="footer-message">Click paypal image to proceed to payment</p>
+        </div>
         <a href="{% url 'tournament_page' tournament.id %}" class="btn btn-secondary">back</a>
       </div>
     </div>

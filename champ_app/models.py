@@ -107,6 +107,7 @@ class Team(models.Model):
 
     class Meta:
         db_table = "rosters"
+        
     def __str__(self):
         return self.name
 
@@ -125,7 +126,12 @@ class Team(models.Model):
         else: return players_list
 
     def get_payment(self,tournament):
+        # get any payments made for a tournament
         return Payment.objects.filter(team=self,tournament=tournament)
+
+    def is_signed_up(self,tournament):
+        # check if team is signed up for tournament
+        return self in tournament.team_set.all()
 
 class User(AbstractUser):
     email = models.EmailField(verbose_name="Email",max_length=255)

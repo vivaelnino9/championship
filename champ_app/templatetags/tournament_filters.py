@@ -21,4 +21,4 @@ def server_city(server):
 # check if user can sign up for tournament
 def can_signup(user,tournament):
     if user.is_anonymous() or user.team is None: return False
-    return user.team not in tournament.team_set.all()
+    return not user.team.is_signed_up(tournament)
