@@ -10,7 +10,7 @@ body {
     min-height: 100%;
 }
 footer {
-    background-color: #656565;
+    background-color: #868e96;
 }
 .footer, .push {
     height: 50px;
@@ -251,7 +251,7 @@ footer {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #656565;
+    background-color: #868e96;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -261,7 +261,7 @@ footer {
     text-decoration: none;
     font-size: 25px;
     /*color: #b5b5b5;*/
-    color: #656565;
+    color: #868e96;
     display: block;
     transition: 0.3s;
 }
@@ -286,8 +286,8 @@ footer {
 .sidebar-button {
     font-size: 30px;
     cursor: pointer;
-    background-color: #656565;
-    color: #b5b5b5;
+    background-color: #868e96;
+    color: #fff;
     padding: 5px;
     position: fixed;
     left: 0px;
