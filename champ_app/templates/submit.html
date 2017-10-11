@@ -9,8 +9,12 @@
     <h6 class="card-subtitle mb-2 text-muted">{{ game.tournament.full }}</h6>
     <p class="card-text">Game #{{ game.game }}</p>
   </div>
+  <div class="card-footer text-muted" id="waiting-footer" style="display:none;">
+    <p>Please wait, this may take a minute!</p>
+    <img src="https://s3.amazonaws.com/beamobile/Spinner.gif" height="40" width="40" />
+  </div>
 </div><br>
-<form method="post">
+<form method="post" id="submit-form">
   {% csrf_token %}
   {% for field in form %}
   {% if forloop.counter == 1 %}
@@ -35,7 +39,7 @@
   <input type="hidden" name="winner_col" class="form-control" value="{{ game.winner.col }}" />
   <input type="hidden" name="loser_row" class="form-control" value="{{ game.loser.row }}" />
   <input type="hidden" name="loser_col" class="form-control" value="{{ game.loser.col }}" />
-  <button class="card-button btn btn-primary" type="submit">Submit</button>
+  <button id="form-submit" class="card-button btn btn-primary" type="submit">Submit</button>
 </form>
 {% else %}
 <div class="card">
@@ -47,4 +51,5 @@
   </div>
 </div>
 {% endif %}
+<script src="{% static 'js/submit.js' %}"></script>
 {% endblock %}
