@@ -44,6 +44,7 @@ def submit(request):
             }
             games.update(winner_loser)
             process_games(games)
+            return HttpResponseRedirect(reverse('submit'))
     else:
         form = SubmitForm()
     return render(request,'submit.html',{

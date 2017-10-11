@@ -103,6 +103,7 @@ def get_submit_game(context):
     if tournament.exists():
         tournament = tournament.first()
         game = find_game(tournament.abv,user.team)
+        if not game: return False
         game['tournament'] = tournament
         return game
     else:

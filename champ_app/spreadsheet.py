@@ -193,6 +193,7 @@ def find_game(tournament_abv,team):
         winner_loser = get_winner_loser(s,cell.row,cell.col)
         if winner_loser['winner'].value == '' and winner_loser['loser'].value == '':
             teams = get_teams(s,cell)
+            if teams['team1'] == '' or teams['team2'] == '': teams = {}
     return teams
 
 def get_cell_list(s,tournament_abv,team):
