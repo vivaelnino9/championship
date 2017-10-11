@@ -1,8 +1,8 @@
-{% extends "base.html" %} {% load staticfiles %}
+{% extends "base.html" %}
+{% load staticfiles app_tags %}
 {% block content %}
 <div class="container">
-  <!-- Jumbotron Header -->
-  <header class="jumbotron my-4">
+  <div class="jumbotron my-4">
     <div class="countdown-div">
       <div id="clock"></div>
       <div class="until-div">
@@ -16,58 +16,11 @@
       <a href="{% url 'donate' %}" class="donate btn btn-outline-primary">Donate</a>
     </div>
     <iframe src="//bracketcloud.com/embed/103815?banner=false&brkbg=fffff" width="100%" height="500" scrolling="no" frameborder="0" allowtransparency="true" title="BracketCloud Tournament" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br/><small><span style="color:#a3a3a3">Updates every minute - </span><a href="//bracketcloud.com/tournament/103815" style="color:#0088cc;text-align:left" target="_blank">View full tournament</a></small>
-  </header>
+  </div>
 
   <!-- Page Features -->
   <div class="row text-center">
-
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="stat-card">
-        <div class="card-body">
-          <h4 class="stat-card-header"><i class='card-icon fa fa-star'></i>Capture Leaders</h4>
-          {% include "capture-table.html" %}
-        </div>
-        <div class="card-footer">
-          <a href="#" class="card-button btn btn-primary">View All</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="stat-card">
-        <div class="card-body">
-          <h4 class="stat-card-header"><i class='card-icon fa fa-flag'></i>Hold Leaders</h4>
-          {% include "hold-table.html" %}
-        </div>
-        <div class="card-footer">
-          <a href="#" class="card-button btn btn-primary">View All</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="stat-card">
-        <div class="card-body">
-          <h4 class="stat-card-header"><i class='card-icon fa fa-bolt'></i>Return Leaders</h4>
-          {% include "return-table.html" %}
-        </div>
-        <div class="card-footer">
-          <a href="#" class="card-button btn btn-primary">View All</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="stat-card">
-        <div class="card-body">
-          <h4 class="stat-card-header"><i class='card-icon fa fa-eye'></i>Prevent Leaders</h4>
-          {% include "prevent-table.html" %}
-        </div>
-        <div class="card-footer">
-          <a href="#" class="card-button btn btn-primary">View All</a>
-        </div>
-      </div>
-    </div>
+    {% include "stat-tables.html" %}
   </div>
   <!-- /.row -->
 </div>
@@ -79,6 +32,13 @@ $('#clock').countdown('{{ next_tournament.date|date:"Y/m/d" }}', function(event)
     + '<span style="font-size:45px;">%H</span> hr '
     + '<span style="font-size:45px;">%M</span> min '
     + '<span style="font-size:45px;">%S</span> sec</h2>'));
+});
+$('.view-all').click(function () {
+  var table = $(this).closest('.stat-card').find('.card-table')
+  table.find('.stat-row:hidden').show();
+  if (table.find('.stat-row').length == table.find('.stat-row:visible').length) {
+      $(this).hide();
+  }
 });
 </script>
 <!-- /.container -->

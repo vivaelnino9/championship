@@ -1,0 +1,26 @@
+{% load app_tags %}
+{% get_leaders as leaders %}
+
+{% for name,players in leaders.items %}
+<div class="col-lg-3 col-md-6 mb-4">
+  <div class="stat-card">
+    <div class="card-body">
+      <h4 class="stat-card-header"><i class='card-icon fa fa-star'></i>{{ name }}</h4>
+      <table class="card-table">
+        {% for player in players %}
+        <tr class="stat-row">
+          <td>{{ forloop.counter }}</td>
+          <td class="card-player"><a class="card-link" href="#">{{ player.name }}</a></td>
+          <td class="card-stat">{{ player.stat }}</td>
+        </tr>
+        {% empty %}
+        No stats yet!
+        {% endfor %}
+      </table>
+    </div>
+    <div class="card-footer">
+      <button class="view-all card-button btn btn-primary">View All</button>
+    </div>
+  </div>
+</div>
+{% endfor %}
