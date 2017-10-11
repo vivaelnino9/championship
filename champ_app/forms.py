@@ -1,9 +1,10 @@
 import collections
 
 from django import forms
-
+from django.utils.translation import gettext as _
 from .models import *
 from .choices import *
+from .spreadsheet import *
 
 class TeamForm(forms.ModelForm):
     name = forms.CharField(max_length=50)
@@ -47,3 +48,69 @@ class TeamForm(forms.ModelForm):
             for player in team.get_players(False):
                 existing_players.append(player)
         return existing_players
+
+class SubmitForm(forms.Form):
+    g1h1 = forms.CharField(
+        max_length=50,
+        label="G1H1",
+    )
+    g1h1time = forms.CharField(
+        max_length=50,
+        label="G1H1[Time]",
+        required=False
+    )
+    g1h2 = forms.CharField(
+        max_length=50,
+        label="G1H2",
+    )
+    g1h2time = forms.CharField(
+        max_length=50,
+        label="G1H2[Time]",
+        required=False
+    )
+    g1ot1 = forms.CharField(
+        max_length=50,
+        label="G1OT1",
+        required=False
+    )
+    g1ot2 = forms.CharField(
+        max_length=50,
+        label="G1OT2",
+        required=False
+    )
+    g2h1 = forms.CharField(
+        max_length=50,
+        label="G2H1",
+    )
+    g2h1time = forms.CharField(
+        max_length=50,
+        label="G2H1[Time]",
+        required=False
+    )
+    g2h2 = forms.CharField(
+        max_length=50,
+        label="G2H2",
+    )
+    g2h2time = forms.CharField(
+        max_length=50,
+        label="G2H2[Time]",
+        required=False
+    )
+    g2ot1 = forms.CharField(
+        max_length=50,
+        label="G2OT1",
+        required=False
+    )
+    g2ot2 = forms.CharField(
+        max_length=50,
+        label="G2OT2",
+        required=False
+    )
+    winner = forms.CharField(
+        max_length=50,
+        label="Winner",
+    )
+    loser = forms.CharField(
+        max_length=50,
+        label="Loser",
+    )

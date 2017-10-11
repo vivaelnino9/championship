@@ -3,8 +3,16 @@ from django.core.urlresolvers import reverse
 
 from champ_app.models import *
 from champ_app.paypal import *
+from champ_app.spreadsheet import *
 
 register = template.Library()
+
+# Home Page
+
+@register.simple_tag(name='get_leaders')
+# get stats for leaderboards
+def get_leaders():
+    return get_season_leaders()
 
 # Roster Table
 
@@ -85,13 +93,17 @@ def paypal_payment_link(context,tournament):
         link['disabled'] = 'disabled'
     return link
 
-
-
-
-
-
-
-
-
-
-#
+# Submit Page
+@register.simple_tag(name='get_submit_game',takes_context=True)
+def get_submit_game(context):
+    request = context['request']
+    user = request.user
+    if user.is_anonymous(): return False
+    tournament = user.team.tournaments.filter(active=True)
+    if tournament.exists():
+        tournament = tournament.first()
+        game = find_game(tournament.abv,user.team)
+        game['tournament'] = tournament
+        return game
+    else:
+        return False

@@ -30,6 +30,32 @@ def donate(request):
     return render(request,'donate.html',{
     })
 
+def submit(request):
+    if request.user.is_anonymous(): return HttpResponseRedirect(reverse('index'))
+    if request.method == 'POST':
+        form = SubmitForm(request.POST)
+        if form.is_valid():
+            games = get_games(form)
+            winner_loser = {
+                'winner_row':request.POST['winner_row'],
+                'winner_col': request.POST['winner_col'],
+                'loser_row': request.POST['loser_row'],
+                'loser_col': request.POST['loser_col']
+            }
+            games.update(winner_loser)
+            process_games(games)
+    else:
+        form = SubmitForm()
+    return render(request,'submit.html',{
+        'form':form,
+    })
+
+def search(request,input):
+    teams = Team.objects.filter(name__icontains=input)
+    return render(request, 'search.html',{
+        'results':teams,
+    })
+
 def logout(request):
     user_logout(request)
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
@@ -63,7 +89,7 @@ def tournament_signup(request,tournament_id,team_name,action):
 
 
 def roster_change(request):
-    team_name = name=request.GET.get('team_name', None)
+    team_name = request.GET.get('team_name', None)
     new_players = check_for_new_players(team_name,request)
     if new_players: change_roster(team_name,new_players)
     data = {'sucess':new_players}
@@ -115,6 +141,13 @@ def change_roster(team_name,new_players):
         elif field == 'player4': team.update(player4=player)
         else: pass
     if new_players: edit_roster(team_name,new_players)
+
+def get_games(form):
+    games = {}
+    for field in form.cleaned_data:
+        value = form.cleaned_data[field]
+        if value != '': games[field] = value
+    return games
 
 def add_tournament(team,tournament):
     enter_signup(team.name,tournament.abv) # spreadsheet.py

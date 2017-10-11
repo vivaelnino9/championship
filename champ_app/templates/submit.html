@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load team_filters app_tags %}
+{% block content %}
+{% get_submit_game as game %}
+{% if game %}
+<div class="card">
+  <div class="card-block">
+    <h4 class="card-title">{{ game.team1 }}&nbsp;vs.&nbsp;{{ game.team2 }}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">{{ game.tournament.full }}</h6>
+    <p class="card-text">Game #{{ game.game }}</p>
+  </div>
+</div><br>
+<form method="post">
+  {% csrf_token %}
+  {% for field in form %}
+  {% if forloop.counter == 1 %}
+  <p style="text-align:center;font-size:12px;">Enter tagpro.eu links only</p>
+  <p style="background-color:beige;text-align:center;">Game 1</p>
+  {% endif %}
+  {% if forloop.counter == 7 %}
+  <p style="background-color:beige;text-align:center;">Game 2</p>
+  {% endif %}
+  {% if forloop.counter == 13 %}
+  <p style="background-color:beige;text-align:center;">Final</p>
+  <p style="text-align:center;font-size:12px;">Enter team names only</p>
+  {% endif %}
+  <div class="form-group row">
+    <label for="{{ field.id_for_label }}" class="col-2 col-form-label {{ field|required }} ">{{ field.label }}</label>
+    <div class="col-10">
+      {{ field|addclass:"form-control" }}
+    </div>
+  </div>
+  {% endfor %}
+  <input type="hidden" name="winner_row" class="form-control" value="{{ game.winner.row }}" />
+  <input type="hidden" name="winner_col" class="form-control" value="{{ game.winner.col }}" />
+  <input type="hidden" name="loser_row" class="form-control" value="{{ game.loser.row }}" />
+  <input type="hidden" name="loser_col" class="form-control" value="{{ game.loser.col }}" />
+  <button class="card-button btn btn-primary" type="submit">Submit</button>
+</form>
+{% else %}
+<div class="card">
+  <div class="card-header"></div>
+  <div class="card-block">
+    <h4 class="card-title">You have no games to submit!</h4>
+    <p class="card-text">Check out the current tournaments to sign up!</p>
+    <a href="{% url 'tournaments' %}" class="btn btn-secondary">View tournaments</a>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

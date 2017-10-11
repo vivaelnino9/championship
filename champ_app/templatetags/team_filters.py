@@ -1,5 +1,6 @@
 from django import template
 from django.core.exceptions import ObjectDoesNotExist
+from django.template import Library
 
 from champ_app.models import *
 from champ_app.spreadsheet import *
@@ -20,6 +21,11 @@ def can_edit(user,team):
     if user.is_anonymous(): return False
     return user.team == team and user.team.tournaments.count() == 0
 
+@register.filter(name='addclass')
+# add form field class
+def addclass(field, class_attr):
+    return field.as_widget(attrs={'class': class_attr})
+
 # Roster Table
 
 @register.filter(name='can_add_player')
@@ -35,5 +41,5 @@ def can_add_player(team):
 @register.filter(name='required')
 # check field is required
 def required(field):
-    if field.name != 'player4': return 'required'
-    else: return ''
+    if field.field.required: return 'required'
+    else: return 'form-optional'

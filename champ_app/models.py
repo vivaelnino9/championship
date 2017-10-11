@@ -8,6 +8,7 @@ class Tournament(models.Model):
     name = models.CharField(verbose_name="Name",max_length=50)
     abv = models.CharField(verbose_name="Abbreviation",max_length=10)
     full = models.CharField(verbose_name="Full Name",max_length=50)
+    active = models.BooleanField(verbose_name="Active",default=False)
     pay = models.BooleanField(verbose_name="Pay",default=False)
     cost = models.CharField(
         verbose_name="Cost",
@@ -33,7 +34,7 @@ class Tournament(models.Model):
     class Meta:
         db_table = "tournaments"
     def __str__(self):
-        return self.name
+        return self.full
 
 class Payment(models.Model):
     team = models.ForeignKey(
@@ -107,7 +108,7 @@ class Team(models.Model):
 
     class Meta:
         db_table = "rosters"
-        
+
     def __str__(self):
         return self.name
 
