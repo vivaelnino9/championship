@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 body {
     font-family: 'Ubuntu', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
     font-weight: 300;
     font-size: 16px;
     color: #343a40;
-    background-color: #e9ecef;
+    background-color: #efefef;
     padding-top: 0px;
     position: relative;
     min-height: 100%;
@@ -24,7 +26,18 @@ footer {
     color: #343a40!important;
 }
 .jumbotron {
-    padding-top: 30px;
+    padding: 0px;
+    border: 1px solid #c5c5c5;
+}
+header.jumbotron, .header-img {
+    background-color: #e1e2e2;
+}
+.header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    padding: 10px;
 }
 .countdown-div {
     text-align: center;
@@ -78,6 +91,9 @@ footer {
 .remove:hover {
     background-color: #d9534f;
     border-color: #d9534f;
+}
+.stat-row:nth-child(n+11) {
+    display: none;
 }
 .card-table {
     margin-left: auto;
@@ -173,10 +189,6 @@ footer {
     text-align: center;
     margin: 20px;
 }
-.required:after {
-    content: ' *';
-    color: red;
-}
 .team-form {
     margin: 20px 0px 20px 0px;
 }
@@ -194,6 +206,18 @@ footer {
 .donation-message {
     font-size: 14px;
 }
+.result-message {
+    font-size: 18px;
+}
+.result-link:hover {
+    text-decoration: none;
+}
+.result-message:hover {
+    background-color: #f3f3f3;
+}
+.form-optional {
+    color: #b1b1b1;
+}
 .card:first-of-type {
     margin-left: 34px;
 }
@@ -206,7 +230,7 @@ footer {
 }
 .card-footer {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: rgba(0, 0, 0, 0.12)
 }
 .footer-message {
     margin-bottom: 0px;

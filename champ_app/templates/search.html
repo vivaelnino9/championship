@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid donation-page">
+    <div class="row">
+      <div class="card" style="width: 100%;">
+        <div class="card-header">Search</div>
+        <div class="card-block">
+          <h4 class="card-title">Search Results</h4>
+          {% for result in results %}
+          <p class="result-message card-text"><a class="result-link" href="{% url 'team' result %}" >{{ result }}</a></p>
+          {% empty %}
+          <p class="result-message card-text">No results</p>
+          {% endfor %}
+        </div>
+        <div class="card-footer text-muted">
+          <p class="footer-message"></p>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
