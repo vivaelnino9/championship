@@ -17,5 +17,6 @@ urlpatterns = [
     url(r'^tournaments/(?P<tournament_id>[\w|\W]+)/$',views.tournament_page, name='tournament_page'),
     url(r'^tournament_payment/(?P<tournament_id>[\w|\W]+)/$',views.tournament_payment, name='tournament_payment'),
     url(r'^tournament_signup/(?P<tournament_id>[\w|\W]+)/(?P<team_name>[\w|\W]+)/(?P<action>[\w|\W]+)/$', views.tournament_signup, name='tournament_signup'),
+    url(r'^tournament_activate/(?P<tournament_id>[\w|\W]+)/$',views.tournament_activate, name='tournament_activate'),
     url(r'^roster_change/$', views.roster_change, name='roster_change'),
 ]

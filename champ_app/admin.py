@@ -27,6 +27,17 @@ class TeamAdmin(admin.ModelAdmin):
 
 admin.site.register(Team,TeamAdmin)
 
+class GameAdminForm(forms.ModelForm):
+    model = Game
+
+class GameAdmin(admin.ModelAdmin):
+    list_display = ('number','team1','team2','tournament','status')
+    list_filter = ['tournament','status']
+    list_per_page = 20
+    form = GameAdminForm
+
+admin.site.register(Game,GameAdmin)
+
 class TournamentAdminForm(forms.ModelForm):
     model = Tournament
 

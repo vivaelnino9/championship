@@ -18,5 +18,10 @@ POSITION_CHOICES = (
     (3, _("O/D")),
     (4, _("D/O")),
     (5, _("Any")),
+)
 
+STATUS_CHOICES = (
+    (1, _("Looking")),
+    (2, _("Set")),
+    (3, _("Submitted")),
 )

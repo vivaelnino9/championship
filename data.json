@@ -1,1 +1,1672 @@
-[{"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "champ_app", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "champ_app", "model": "payment"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "champ_app", "model": "team"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "champ_app", "model": "tournament"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "social_django", "model": "association"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "social_django", "model": "code"}}, {"model": "contenttypes.contenttype", "pk": 12, "fields": {"app_label": "social_django", "model": "nonce"}}, {"model": "contenttypes.contenttype", "pk": 13, "fields": {"app_label": "social_django", "model": "usersocialauth"}}, {"model": "contenttypes.contenttype", "pk": 14, "fields": {"app_label": "social_django", "model": "partial"}}, {"model": "sessions.session", "pk": "1a7r0mu5vzbanlhwcl67ouobr7msrykz", "fields": {"session_data": "Y2Y3NDY1M2JhYzc0NzdhY2ZlNTc1OWM1YTE4YTE1ODQwYzZhMDIxZjp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IjZyZHhsc3hUYXdnaTEyd0l2VDFhQ1Q4blF0WFNobU1XIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-18T20:23:31.605Z"}}, {"model": "sessions.session", "pk": "3l0azkrfnsy3cpkms0pyom65y3exrlac", "fields": {"session_data": "MTVjMTNhMzA4ZTdjM2RjZjMzYzg4MDA4NGNkY2JmZWUwZWZlOWIzZjp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IkxUZ3cwNzZ4NGNoM3pGZUc2emJKc3N2dDVFZ2tNTko2IiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-17T13:52:46.457Z"}}, {"model": "sessions.session", "pk": "562fr342u7v1r4ehm95kks2zrik0gl7v", "fields": {"session_data": "Nzc3OTkzYjcwNjRjYWViNTM5N2U0OGRmMzFiMjg5NjQ0MTMzZTQ5Njp7Imdvb2dsZS1vYXV0aDJfc3RhdGUiOiJFZnMxcDE5aDZ6OFk5RDBrdDdIOG5KVUtNSFlYS0lYMCIsIl9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic29jaWFsX2NvcmUuYmFja2VuZHMuZ29vZ2xlLkdvb2dsZU9BdXRoMiIsIl9hdXRoX3VzZXJfaGFzaCI6ImU5MDBlZTRkMzk4NTQwZTA4OTY5ZTU3YmY4M2E0ZTlhZjNiNjUzYzAiLCJzb2NpYWxfYXV0aF9sYXN0X2xvZ2luX2JhY2tlbmQiOiJnb29nbGUtb2F1dGgyIn0=", "expire_date": "2017-10-09T21:18:49.027Z"}}, {"model": "sessions.session", "pk": "awvkief4ch9dfiwc0b5ayrnhl9i22xda", "fields": {"session_data": "N2JjYjhjNWI0ZjlmZjUyZjBkNGYxZmRhODU4NTg5MzRjMzg5M2EyNzp7Im5leHQiOiIvdG91cm5hbWVudHMvMi8iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoiMHRLZnFQNEd2QnRNREJVcWRkVXh3bGZBWEJRcnNwcWciLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InNvY2lhbF9jb3JlLmJhY2tlbmRzLmdvb2dsZS5Hb29nbGVPQXV0aDIiLCJfYXV0aF91c2VyX2hhc2giOiJlOTAwZWU0ZDM5ODU0MGUwODk2OWU1N2JmODNhNGU5YWYzYjY1M2MwIiwic29jaWFsX2F1dGhfbGFzdF9sb2dpbl9iYWNrZW5kIjoiZ29vZ2xlLW9hdXRoMiJ9", "expire_date": "2017-10-11T21:05:49.818Z"}}, {"model": "sessions.session", "pk": "b0raykzrlwc734910t6vm109i2pleoyb", "fields": {"session_data": "OTQ5MGVlODEwYTY5ODM1Yzk2NTYwNGU1NzY2YWY1ODJiNjE5YjAxZjp7Im5leHQiOiIvbGVhZ3VlX2luZm8vIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IjZtb2FPdVg5TnhTY2I3ZEk3ZGFiRTludDlIbHgzY3lDIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-11T16:04:48.154Z"}}, {"model": "sessions.session", "pk": "bt4iyshodkqvgxo1inw144hu5nhi7d0m", "fields": {"session_data": "YmZiZmI5NmViNWEyNTY1YzVmMDQ3MDNlNWExZDhmY2QwOTJiZDAxMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1NTJmZDM0MWY4NDg0NDIxN2E0MDQ0NzVmMDM3MjZkYmE0YjQzZDVkIn0=", "expire_date": "2017-10-11T15:10:55.897Z"}}, {"model": "sessions.session", "pk": "c152typ5y4558mf49avgiz60kut9sbqa", "fields": {"session_data": "MGM4OWZmMGUxZTFiNGYzYzhlZjdjOTE4ODU3NGNmYzk2Mzk3N2ZiYTp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IlFmVGthRW9WODA4QUNzYU9VUFBBYUx1ZkdBcUtXNDE0IiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-19T00:56:12.720Z"}}, {"model": "sessions.session", "pk": "eur15z7tzqgajit2wdwhmc5j7v6waik1", "fields": {"session_data": "NzczN2YzYTBkZmQ2NjgwYTNlY2RmODdkZDY4ZTc0MzA5YjFhZGU0Mzp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6InkyakdaWXhoSXdDekFocXFDdjcwY2NxVlZuSDVzcVZ1IiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-18T13:53:13.189Z"}}, {"model": "sessions.session", "pk": "g1rikv7isot9gsp6wbsitqodrcrubcfi", "fields": {"session_data": "NTU5NmY3ZjY1NTQ2MDdmYTNiMmZhOTRlODZhMGM1ZDdkZjJlMWRiZjp7Im5leHQiOiJ7e3JlcXVlc3QucGF0aH0iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoidDEyWnhidGVuRlp2ZHBkUTBhc0JGblkwZjRpck9HQWYifQ==", "expire_date": "2017-10-11T15:52:45.285Z"}}, {"model": "sessions.session", "pk": "h79tih1335y3oid7fmt83sqeyuxf400w", "fields": {"session_data": "NzkyNzMxNmE1Yjk1MGE5YzE2Y2Y5MjBhZTM2NWFlYTEwYmIwZDA3MDp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6Ik1UTWFoekE3Z3Exc3ZKSk9GVENQRkFPQUNMQkRGc1ZuIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-16T17:56:44.157Z"}}, {"model": "sessions.session", "pk": "h7v3lwhw2vzi2hi8359zygrxv9rwnrco", "fields": {"session_data": "NGFjMmNjYTZiM2VjZTU4ZDEyY2YyODE5Mjg1Zjg5ZGRmNTg1NzgyNDp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IlJnWFhNNXpoTkI5SGZDbzFiTHpYbjJPWmk4eDB2aWVKIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-16T16:11:28.557Z"}}, {"model": "sessions.session", "pk": "i74uiwfwy6lnvjmhy8xiujs37kaoo8u5", "fields": {"session_data": "ZmYwMzE2ZTljNWQ0NTA4OGRiZDIyYTcyODlmNDQyYWE3YWE5OTA2Yzp7Im5leHQiOiIvdG91cm5hbWVudHMvMy8iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoiNU1hMTE5UGhWTTBTT1R3Q3lyNEJCcEZxejFsajk3YVAiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InNvY2lhbF9jb3JlLmJhY2tlbmRzLmdvb2dsZS5Hb29nbGVPQXV0aDIiLCJfYXV0aF91c2VyX2hhc2giOiJlOTAwZWU0ZDM5ODU0MGUwODk2OWU1N2JmODNhNGU5YWYzYjY1M2MwIiwic29jaWFsX2F1dGhfbGFzdF9sb2dpbl9iYWNrZW5kIjoiZ29vZ2xlLW9hdXRoMiJ9", "expire_date": "2017-10-16T19:49:35.671Z"}}, {"model": "sessions.session", "pk": "nipm795ghn2osc7a66jao40uqzjtlibi", "fields": {"session_data": "ODAwNjVhNzQ5MzgwYTc2MzNhNzk5MTY3NDFmNDU2MDE4NjMyODYzMzp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6Im10U0ZwVzZybWttWTU2TzJjWW9DWVJnTDMzSkhyY0xFIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-13T12:18:56.580Z"}}, {"model": "sessions.session", "pk": "nnu8ozlz359niif8g3tuqyk7n54z6nwa", "fields": {"session_data": "MjljNjdhYjhhNjlmZWRkNTBhOWNkOGM1ZGIzZmQxODI2N2Q5YTE0Mjp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IjJCQURGTmh0emtzaFRtUUw0eEhvWk5MZzVkZG9ISWNhIiwiX2F1dGhfdXNlcl9pZCI6IjMiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiN2Q3YWY5ZTQ2NTYwNzE0YzNjN2YwZDJkN2MyZGIyOGI5MTJhMmI1MSIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-24T22:21:47.882Z"}}, {"model": "sessions.session", "pk": "t197k5v1hx7ogkxbjm4xup2flpbbq9kv", "fields": {"session_data": "OGMwNTM3ZjUzYWFjYTFhYTc4NjM2Yjg0MWIwMjVhNmM3MmYxOGRiNDp7Im5leHQiOiIvdG91cm5hbWVudHMvMi8iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoiaHdZTTJvY1dsWXpYSUlJdnB0eUtxZjd5WlRSNklyMk4iLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InNvY2lhbF9jb3JlLmJhY2tlbmRzLmdvb2dsZS5Hb29nbGVPQXV0aDIiLCJfYXV0aF91c2VyX2hhc2giOiJlOTAwZWU0ZDM5ODU0MGUwODk2OWU1N2JmODNhNGU5YWYzYjY1M2MwIiwic29jaWFsX2F1dGhfbGFzdF9sb2dpbl9iYWNrZW5kIjoiZ29vZ2xlLW9hdXRoMiJ9", "expire_date": "2017-10-11T20:38:45.858Z"}}, {"model": "sessions.session", "pk": "uhhp95a888qqmwgry48yw6g1nflz93ql", "fields": {"session_data": "YzBmODU3YzI1OGY3M2M1MmQ0YTNjMzJjMjkyYWIyYWY0NzFhOGU3ZTp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6ImgzNHJPdkVwd0RXQ1NvakR6R3FORzlIUlVDM0ZGUDlEIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-19T19:58:59.520Z"}}, {"model": "sessions.session", "pk": "vafcklzljl6xbdgyuare71vmc6xdbup3", "fields": {"session_data": "MjVkZmIyZjEyZGU2MjZkODY4ODkzNWQzOTFhNjU1NjJhODE5NjliNjp7Im5leHQiOiIvdG91cm5hbWVudHMvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6ImM3OGdMNkpOdlFiNWFMZ3ZpM2prc2loRkxzOEJMNGIzIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-17T01:58:48.505Z"}}, {"model": "sessions.session", "pk": "vx3dv5n6tgrxxu6eh48ijsjaf0k7mosr", "fields": {"session_data": "NDQxZmIzNGQxZTZhMWVjNGU2NTIyZjEwMmRlMWZjOTRiYjYwNzZlMjp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6Ik9YNTBDTzNXc3FPOXowaUxmdk54b0FhdnZFd3dXNnVQIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-24T19:25:28.964Z"}}, {"model": "sessions.session", "pk": "w92e1n4n9ikoa9x7560g22nht4451sin", "fields": {"session_data": "OGFjODE5YTQ1NzI2M2I3ZjA0ZWM3MmZjMTE3OTRiNThjMzg0NzYwNDp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6Iks1ZEYwVXpDRWNkZnlRTTBrSkpvaHZnQ0lDMTA1OXl3IiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-11T16:34:06.286Z"}}, {"model": "sessions.session", "pk": "xta83mvuxburz24ackuqtdcakts9xsec", "fields": {"session_data": "ZjYwNmFkYWRhMTlmMDg0NTZiZDY0MGRmNDU0N2NmZTU1ZDUzOTRmYzp7Im5leHQiOiIvdG91cm5hbWVudHMvMi8iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoidElUVzZlTHREaFVGVDlyZVczQk10NlRwQWttQlVHdUQiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InNvY2lhbF9jb3JlLmJhY2tlbmRzLmdvb2dsZS5Hb29nbGVPQXV0aDIiLCJfYXV0aF91c2VyX2hhc2giOiJlOTAwZWU0ZDM5ODU0MGUwODk2OWU1N2JmODNhNGU5YWYzYjY1M2MwIiwic29jaWFsX2F1dGhfbGFzdF9sb2dpbl9iYWNrZW5kIjoiZ29vZ2xlLW9hdXRoMiJ9", "expire_date": "2017-10-11T17:45:30.956Z"}}, {"model": "sessions.session", "pk": "yqza1x8sii3inoqbw5x9nlcsu1yqka7x", "fields": {"session_data": "NzE3YTljNTNmNDhhMzQ4ZmZkNDFhN2FhYzEwYmFkMTQ3ZmVkYjNmODp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IkcxeWhFSDNKU2c3R3lKUGJXWFpGY2tqdDhVb1dFV2hGIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==", "expire_date": "2017-10-25T17:35:26.732Z"}}, {"model": "champ_app.tournament", "pk": 2, "fields": {"name": "Qualifying Tournament", "abv": "T1", "full": "S1 Radius Qualifying Tournament", "active": true, "pay": false, "cost": null, "server": 1, "date": "2017-10-31", "logo": "", "Qualified": []}}, {"model": "champ_app.team", "pk": 1, "fields": {"name": "Pop Fiction", "captain": "Eldenn", "player1": "Rattpack", "player2": "Gasol", "player3": "Anti-re", "player4": "Homie", "server": 1, "logo": "", "tournaments": [2]}}, {"model": "champ_app.team", "pk": 2, "fields": {"name": "Test Team 0", "captain": "test0", "player1": "testA1", "player2": "testA2", "player3": "testA3", "player4": "testA4", "server": 1, "logo": "", "tournaments": [2]}}, {"model": "champ_app.team", "pk": 3, "fields": {"name": "Test Team 1", "captain": "test1", "player1": "testB1", "player2": "testB2", "player3": "testB3", "player4": "testB4", "server": 1, "logo": "", "tournaments": [2]}}, {"model": "champ_app.team", "pk": 4, "fields": {"name": "Test Team 2", "captain": "test2", "player1": "testC1", "player2": "testC2", "player3": "testC3", "player4": "testC4", "server": 1, "logo": "", "tournaments": [2]}}, {"model": "champ_app.team", "pk": 5, "fields": {"name": "Test Team 3", "captain": "test3", "player1": "testD1", "player2": "testD2", "player3": "testD3", "player4": "testD4", "server": 1, "logo": "", "tournaments": [2]}}, {"model": "champ_app.team", "pk": 6, "fields": {"name": "Test Team 4", "captain": "test4", "player1": "testE1", "player2": "testE2", "player3": "testE3", "player4": "testE4", "server": 1, "logo": "", "tournaments": [2]}}, {"model": "champ_app.team", "pk": 7, "fields": {"name": "Test Team 5", "captain": "test5", "player1": "testF1", "player2": "testF2", "player3": "testF3", "player4": "testF4", "server": 1, "logo": "", "tournaments": [2]}}, {"model": "champ_app.team", "pk": 8, "fields": {"name": "Test Team 6", "captain": "test6", "player1": "testG1", "player2": "testG2", "player3": "testG3", "player4": "testG4", "server": 1, "logo": "", "tournaments": [2]}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can add content type", "content_type": 4, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can change content type", "content_type": 4, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can delete content type", "content_type": 4, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add session", "content_type": 5, "codename": "add_session"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change session", "content_type": 5, "codename": "change_session"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete session", "content_type": 5, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can add user", "content_type": 6, "codename": "add_user"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can change user", "content_type": 6, "codename": "change_user"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can delete user", "content_type": 6, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can add payment", "content_type": 7, "codename": "add_payment"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can change payment", "content_type": 7, "codename": "change_payment"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can delete payment", "content_type": 7, "codename": "delete_payment"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can add team", "content_type": 8, "codename": "add_team"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can change team", "content_type": 8, "codename": "change_team"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can delete team", "content_type": 8, "codename": "delete_team"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add tournament", "content_type": 9, "codename": "add_tournament"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change tournament", "content_type": 9, "codename": "change_tournament"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete tournament", "content_type": 9, "codename": "delete_tournament"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can add association", "content_type": 10, "codename": "add_association"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can change association", "content_type": 10, "codename": "change_association"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can delete association", "content_type": 10, "codename": "delete_association"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can add code", "content_type": 11, "codename": "add_code"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can change code", "content_type": 11, "codename": "change_code"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can delete code", "content_type": 11, "codename": "delete_code"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can add nonce", "content_type": 12, "codename": "add_nonce"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can change nonce", "content_type": 12, "codename": "change_nonce"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can delete nonce", "content_type": 12, "codename": "delete_nonce"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add user social auth", "content_type": 13, "codename": "add_usersocialauth"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change user social auth", "content_type": 13, "codename": "change_usersocialauth"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete user social auth", "content_type": 13, "codename": "delete_usersocialauth"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can add partial", "content_type": 14, "codename": "add_partial"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can change partial", "content_type": 14, "codename": "change_partial"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can delete partial", "content_type": 14, "codename": "delete_partial"}}, {"model": "champ_app.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$36000$MdnZvt4jL4ME$DpSdOPgNbOZdMSHchqK6xV8737ubleGdZJP+jT5y9OY=", "last_login": "2017-10-11T17:33:36.363Z", "is_superuser": true, "username": "admin", "first_name": "", "last_name": "", "is_staff": true, "is_active": true, "date_joined": "2017-09-25T21:18:00.488Z", "email": "admin@admin.com", "team": null, "groups": [], "user_permissions": []}}, {"model": "champ_app.user", "pk": 2, "fields": {"password": "!DszbyjzEifEDPL5EURTK0WVzLTnF93DgKcQVfIjn", "last_login": "2017-10-11T17:35:26.728Z", "is_superuser": false, "username": "mcbride.lucas9", "first_name": "Lucas", "last_name": "McBride", "is_staff": false, "is_active": true, "date_joined": "2017-09-25T21:18:48.987Z", "email": "mcbride.lucas9@gmail.com", "team": 1, "groups": [], "user_permissions": []}}, {"model": "champ_app.user", "pk": 3, "fields": {"password": "!9fhWNgGLNZ0s9pbUwY3dVDcJQvU9aHgOBivGaytR", "last_login": "2017-10-10T22:21:47.880Z", "is_superuser": false, "username": "mcbride9", "first_name": "Lucas", "last_name": "Mcbride", "is_staff": false, "is_active": true, "date_joined": "2017-10-04T21:00:20Z", "email": "mcbride9@bu.edu", "team": 8, "groups": [], "user_permissions": []}}, {"model": "champ_app.user", "pk": 4, "fields": {"password": "cargo111", "last_login": null, "is_superuser": false, "username": "test0", "first_name": "Test", "last_name": "Account", "is_staff": false, "is_active": true, "date_joined": "2017-10-10T17:39:56Z", "email": "test0@test.com", "team": 2, "groups": [], "user_permissions": []}}, {"model": "champ_app.user", "pk": 5, "fields": {"password": "cargo111", "last_login": null, "is_superuser": false, "username": "test1", "first_name": "Test", "last_name": "Account", "is_staff": false, "is_active": true, "date_joined": "2017-10-10T17:42:22Z", "email": "test1@test.com", "team": 3, "groups": [], "user_permissions": []}}, {"model": "champ_app.user", "pk": 6, "fields": {"password": "cargo111", "last_login": null, "is_superuser": false, "username": "test2", "first_name": "Test", "last_name": "Account", "is_staff": false, "is_active": true, "date_joined": "2017-10-10T17:44:19Z", "email": "test2@test.com", "team": 4, "groups": [], "user_permissions": []}}, {"model": "champ_app.user", "pk": 7, "fields": {"password": "cargo111", "last_login": null, "is_superuser": false, "username": "test3", "first_name": "Test", "last_name": "Account", "is_staff": false, "is_active": true, "date_joined": "2017-10-10T17:45:07Z", "email": "test3@test.com", "team": 5, "groups": [], "user_permissions": []}}, {"model": "champ_app.user", "pk": 8, "fields": {"password": "cargo111", "last_login": null, "is_superuser": false, "username": "test4", "first_name": "Test", "last_name": "Account", "is_staff": false, "is_active": true, "date_joined": "2017-10-10T17:45:59Z", "email": "test4@test.com", "team": 6, "groups": [], "user_permissions": []}}, {"model": "champ_app.user", "pk": 9, "fields": {"password": "cargo111", "last_login": null, "is_superuser": false, "username": "test5", "first_name": "Test", "last_name": "Account", "is_staff": false, "is_active": true, "date_joined": "2017-10-10T17:46:57Z", "email": "test5@test.com", "team": 7, "groups": [], "user_permissions": []}}, {"model": "social_django.usersocialauth", "pk": 1, "fields": {"user": 2, "provider": "google-oauth2", "uid": "mcbride.lucas9@gmail.com", "extra_data": "{\"auth_time\": 1507743326, \"expires\": 3599, \"token_type\": \"Bearer\", \"access_token\": \"ya29.GlvhBA22RtEE9CMEw25z9zz_CPlzJjbxoyGQWicp_MXWOHFAPkX3WoTy0On_Zt6VRaLbmE453mV0sHwTkMRy_8Nf-nOYKhvMZtnJB4w-rpPa-7zl6qb8LcecMHpj\"}"}}, {"model": "social_django.usersocialauth", "pk": 2, "fields": {"user": 3, "provider": "google-oauth2", "uid": "mcbride9@bu.edu", "extra_data": "{\"auth_time\": 1507674107, \"expires\": 3599, \"token_type\": \"Bearer\", \"access_token\": \"ya29.GlvgBLGmFcTId2zGymqXAstzhorUSKb8WwtPFIVM3TSJZK9v6gtnEmOTeZBOSoLRr_bLYcAXcmPI2SYreb2R1aH7lUHey9L5frXYUpNZr_gjIlmjsazcllRCsu4L\"}"}}, {"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2017-09-25T21:18:42.476Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "Legendary Tournament", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2017-09-27T15:11:27.671Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "Qualifying Tournament", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2017-09-27T15:12:01.374Z", "user": 1, "content_type": 9, "object_id": "3", "object_repr": "Qualifying Tournament", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2017-09-27T15:12:29.543Z", "user": 1, "content_type": 9, "object_id": "4", "object_repr": "Qualifying Tournament", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2017-10-10T17:40:33.075Z", "user": 1, "content_type": 6, "object_id": "4", "object_repr": "test1@test.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2017-10-10T17:41:05.269Z", "user": 1, "content_type": 6, "object_id": "4", "object_repr": "test0@test.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"email\"]}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2017-10-10T17:42:02.647Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "Test Team 0", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2017-10-10T17:42:05.326Z", "user": 1, "content_type": 6, "object_id": "4", "object_repr": "test0@test.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"team\"]}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2017-10-10T17:43:51.256Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "Test Team 1", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2017-10-10T17:43:53.303Z", "user": 1, "content_type": 6, "object_id": "5", "object_repr": "test1@test.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2017-10-10T17:44:13.692Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "Test Team 0", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"player1\", \"player2\", \"player3\", \"player4\"]}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2017-10-10T17:45:01.151Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "Test Team 2", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2017-10-10T17:45:07.320Z", "user": 1, "content_type": 6, "object_id": "6", "object_repr": "test2@test.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2017-10-10T17:45:57.153Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "Test Team 3", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2017-10-10T17:45:59.561Z", "user": 1, "content_type": 6, "object_id": "7", "object_repr": "test3@test.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2017-10-10T17:46:54.800Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "Test Team 4", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2017-10-10T17:46:57.280Z", "user": 1, "content_type": 6, "object_id": "8", "object_repr": "test4@test.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2017-10-10T17:48:02.525Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "Test Team 5", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2017-10-10T17:48:13.913Z", "user": 1, "content_type": 6, "object_id": "9", "object_repr": "test5@test.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2017-10-10T19:21:06.050Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "Test Team 6", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2017-10-10T19:21:10.654Z", "user": 1, "content_type": 6, "object_id": "10", "object_repr": "test6@test.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2017-10-10T19:22:38.640Z", "user": 1, "content_type": 8, "object_id": "9", "object_repr": "Test Team 7", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2017-10-10T19:22:40.465Z", "user": 1, "content_type": 6, "object_id": "11", "object_repr": "test7@test.com", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2017-10-10T20:58:12.426Z", "user": 1, "content_type": 6, "object_id": "11", "object_repr": "test7@test.com", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2017-10-10T20:58:28.610Z", "user": 1, "content_type": 6, "object_id": "3", "object_repr": "mcbride9@bu.edu", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"team\"]}}]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2017-10-10T20:59:05.804Z", "user": 1, "content_type": 8, "object_id": "9", "object_repr": "Test Team 7", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2017-10-10T20:59:13.290Z", "user": 1, "content_type": 6, "object_id": "10", "object_repr": "test6@test.com", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2017-10-10T20:59:20.338Z", "user": 1, "content_type": 6, "object_id": "3", "object_repr": "mcbride9@bu.edu", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"team\"]}}]"}}, {"model": "admin.logentry", "pk": 29, "fields": {"action_time": "2017-10-10T21:19:42.307Z", "user": 1, "content_type": 9, "object_id": "4", "object_repr": "S1 Sphere Qualifying Tournament", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 30, "fields": {"action_time": "2017-10-10T21:19:42.324Z", "user": 1, "content_type": 9, "object_id": "3", "object_repr": "S1 Centra Qualifying Tournament", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 31, "fields": {"action_time": "2017-10-10T21:19:42.341Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "S1 Sphere Legendary Tournament", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 32, "fields": {"action_time": "2017-10-10T21:19:51.537Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "PAY-82P41077VB5712324LHF4NCQ", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 33, "fields": {"action_time": "2017-10-10T21:20:23.582Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "Pop Fiction", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 34, "fields": {"action_time": "2017-10-10T22:21:44.175Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "S1 Radius Qualifying Tournament", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"active\"]}}]"}}, {"model": "admin.logentry", "pk": 35, "fields": {"action_time": "2017-10-11T16:52:41.826Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "S1 Radius Qualifying Tournament", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"abv\"]}}]"}}, {"model": "admin.logentry", "pk": 36, "fields": {"action_time": "2017-10-11T17:33:50.102Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "S1 Radius Qualifying Tournament", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"date\"]}}]"}}]
+[{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "champ_app",
+        "model": "user"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "champ_app",
+        "model": "game"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "champ_app",
+        "model": "payment"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "champ_app",
+        "model": "team"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "champ_app",
+        "model": "tournament"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "social_django",
+        "model": "association"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "social_django",
+        "model": "code"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "social_django",
+        "model": "nonce"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "social_django",
+        "model": "usersocialauth"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "social_django",
+        "model": "partial"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "1a7r0mu5vzbanlhwcl67ouobr7msrykz",
+    "fields": {
+        "session_data": "Y2Y3NDY1M2JhYzc0NzdhY2ZlNTc1OWM1YTE4YTE1ODQwYzZhMDIxZjp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IjZyZHhsc3hUYXdnaTEyd0l2VDFhQ1Q4blF0WFNobU1XIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-18T20:23:31.605Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "1os8udc3ti2gd7rm2417dhbibzk0nla8",
+    "fields": {
+        "session_data": "YmZiZmI5NmViNWEyNTY1YzVmMDQ3MDNlNWExZDhmY2QwOTJiZDAxMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1NTJmZDM0MWY4NDg0NDIxN2E0MDQ0NzVmMDM3MjZkYmE0YjQzZDVkIn0=",
+        "expire_date": "2017-10-28T15:14:27.764Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "3l0azkrfnsy3cpkms0pyom65y3exrlac",
+    "fields": {
+        "session_data": "MTVjMTNhMzA4ZTdjM2RjZjMzYzg4MDA4NGNkY2JmZWUwZWZlOWIzZjp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IkxUZ3cwNzZ4NGNoM3pGZUc2emJKc3N2dDVFZ2tNTko2IiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-17T13:52:46.457Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "562fr342u7v1r4ehm95kks2zrik0gl7v",
+    "fields": {
+        "session_data": "Nzc3OTkzYjcwNjRjYWViNTM5N2U0OGRmMzFiMjg5NjQ0MTMzZTQ5Njp7Imdvb2dsZS1vYXV0aDJfc3RhdGUiOiJFZnMxcDE5aDZ6OFk5RDBrdDdIOG5KVUtNSFlYS0lYMCIsIl9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic29jaWFsX2NvcmUuYmFja2VuZHMuZ29vZ2xlLkdvb2dsZU9BdXRoMiIsIl9hdXRoX3VzZXJfaGFzaCI6ImU5MDBlZTRkMzk4NTQwZTA4OTY5ZTU3YmY4M2E0ZTlhZjNiNjUzYzAiLCJzb2NpYWxfYXV0aF9sYXN0X2xvZ2luX2JhY2tlbmQiOiJnb29nbGUtb2F1dGgyIn0=",
+        "expire_date": "2017-10-09T21:18:49.027Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "9lkmy1d0z3ptjw7s7712a4dy84o2bvb4",
+    "fields": {
+        "session_data": "OWRjNDMyODYxZTU5NzFmNTI4OWJmM2I5ZmU0ZDQzM2MwYjUzOWQ3Njp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IkZ0NWROcU1CeTl1c0lMVWM4WEZYT1VKTEZ2eVpBRlJjIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-27T02:09:49.674Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "afvaip8q9a8gea3e1wkoi4n7cvb2goo6",
+    "fields": {
+        "session_data": "YTJkMTU1MjJhMGMyOGYyODc0NDgzN2FhNDM0ODVlZmZmNTQwMjkyNTp7Im5leHQiOiIvdG91cm5hbWVudHMvMi8iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoiNFhOamc5Q0lUZXh0NGh0Z1Y0UDF1V21JY2pQUGplek4iLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InNvY2lhbF9jb3JlLmJhY2tlbmRzLmdvb2dsZS5Hb29nbGVPQXV0aDIiLCJfYXV0aF91c2VyX2hhc2giOiJlOTAwZWU0ZDM5ODU0MGUwODk2OWU1N2JmODNhNGU5YWYzYjY1M2MwIiwic29jaWFsX2F1dGhfbGFzdF9sb2dpbl9iYWNrZW5kIjoiZ29vZ2xlLW9hdXRoMiJ9",
+        "expire_date": "2017-10-27T03:44:14.193Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "awvkief4ch9dfiwc0b5ayrnhl9i22xda",
+    "fields": {
+        "session_data": "N2JjYjhjNWI0ZjlmZjUyZjBkNGYxZmRhODU4NTg5MzRjMzg5M2EyNzp7Im5leHQiOiIvdG91cm5hbWVudHMvMi8iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoiMHRLZnFQNEd2QnRNREJVcWRkVXh3bGZBWEJRcnNwcWciLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InNvY2lhbF9jb3JlLmJhY2tlbmRzLmdvb2dsZS5Hb29nbGVPQXV0aDIiLCJfYXV0aF91c2VyX2hhc2giOiJlOTAwZWU0ZDM5ODU0MGUwODk2OWU1N2JmODNhNGU5YWYzYjY1M2MwIiwic29jaWFsX2F1dGhfbGFzdF9sb2dpbl9iYWNrZW5kIjoiZ29vZ2xlLW9hdXRoMiJ9",
+        "expire_date": "2017-10-11T21:05:49.818Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "b0raykzrlwc734910t6vm109i2pleoyb",
+    "fields": {
+        "session_data": "OTQ5MGVlODEwYTY5ODM1Yzk2NTYwNGU1NzY2YWY1ODJiNjE5YjAxZjp7Im5leHQiOiIvbGVhZ3VlX2luZm8vIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IjZtb2FPdVg5TnhTY2I3ZEk3ZGFiRTludDlIbHgzY3lDIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-11T16:04:48.154Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "bt4iyshodkqvgxo1inw144hu5nhi7d0m",
+    "fields": {
+        "session_data": "YmZiZmI5NmViNWEyNTY1YzVmMDQ3MDNlNWExZDhmY2QwOTJiZDAxMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1NTJmZDM0MWY4NDg0NDIxN2E0MDQ0NzVmMDM3MjZkYmE0YjQzZDVkIn0=",
+        "expire_date": "2017-10-11T15:10:55.897Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "c152typ5y4558mf49avgiz60kut9sbqa",
+    "fields": {
+        "session_data": "MGM4OWZmMGUxZTFiNGYzYzhlZjdjOTE4ODU3NGNmYzk2Mzk3N2ZiYTp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IlFmVGthRW9WODA4QUNzYU9VUFBBYUx1ZkdBcUtXNDE0IiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-19T00:56:12.720Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "eur15z7tzqgajit2wdwhmc5j7v6waik1",
+    "fields": {
+        "session_data": "NzczN2YzYTBkZmQ2NjgwYTNlY2RmODdkZDY4ZTc0MzA5YjFhZGU0Mzp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6InkyakdaWXhoSXdDekFocXFDdjcwY2NxVlZuSDVzcVZ1IiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-18T13:53:13.189Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "g1rikv7isot9gsp6wbsitqodrcrubcfi",
+    "fields": {
+        "session_data": "NTU5NmY3ZjY1NTQ2MDdmYTNiMmZhOTRlODZhMGM1ZDdkZjJlMWRiZjp7Im5leHQiOiJ7e3JlcXVlc3QucGF0aH0iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoidDEyWnhidGVuRlp2ZHBkUTBhc0JGblkwZjRpck9HQWYifQ==",
+        "expire_date": "2017-10-11T15:52:45.285Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "h79tih1335y3oid7fmt83sqeyuxf400w",
+    "fields": {
+        "session_data": "NzkyNzMxNmE1Yjk1MGE5YzE2Y2Y5MjBhZTM2NWFlYTEwYmIwZDA3MDp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6Ik1UTWFoekE3Z3Exc3ZKSk9GVENQRkFPQUNMQkRGc1ZuIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-16T17:56:44.157Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "h7v3lwhw2vzi2hi8359zygrxv9rwnrco",
+    "fields": {
+        "session_data": "NGFjMmNjYTZiM2VjZTU4ZDEyY2YyODE5Mjg1Zjg5ZGRmNTg1NzgyNDp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IlJnWFhNNXpoTkI5SGZDbzFiTHpYbjJPWmk4eDB2aWVKIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-16T16:11:28.557Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "i74uiwfwy6lnvjmhy8xiujs37kaoo8u5",
+    "fields": {
+        "session_data": "ZmYwMzE2ZTljNWQ0NTA4OGRiZDIyYTcyODlmNDQyYWE3YWE5OTA2Yzp7Im5leHQiOiIvdG91cm5hbWVudHMvMy8iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoiNU1hMTE5UGhWTTBTT1R3Q3lyNEJCcEZxejFsajk3YVAiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InNvY2lhbF9jb3JlLmJhY2tlbmRzLmdvb2dsZS5Hb29nbGVPQXV0aDIiLCJfYXV0aF91c2VyX2hhc2giOiJlOTAwZWU0ZDM5ODU0MGUwODk2OWU1N2JmODNhNGU5YWYzYjY1M2MwIiwic29jaWFsX2F1dGhfbGFzdF9sb2dpbl9iYWNrZW5kIjoiZ29vZ2xlLW9hdXRoMiJ9",
+        "expire_date": "2017-10-16T19:49:35.671Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "nipm795ghn2osc7a66jao40uqzjtlibi",
+    "fields": {
+        "session_data": "ODAwNjVhNzQ5MzgwYTc2MzNhNzk5MTY3NDFmNDU2MDE4NjMyODYzMzp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6Im10U0ZwVzZybWttWTU2TzJjWW9DWVJnTDMzSkhyY0xFIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-13T12:18:56.580Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "nnu8ozlz359niif8g3tuqyk7n54z6nwa",
+    "fields": {
+        "session_data": "MjljNjdhYjhhNjlmZWRkNTBhOWNkOGM1ZGIzZmQxODI2N2Q5YTE0Mjp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IjJCQURGTmh0emtzaFRtUUw0eEhvWk5MZzVkZG9ISWNhIiwiX2F1dGhfdXNlcl9pZCI6IjMiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiN2Q3YWY5ZTQ2NTYwNzE0YzNjN2YwZDJkN2MyZGIyOGI5MTJhMmI1MSIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-24T22:21:47.882Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "p46a9vlodzm6sfhts6onisezvlx6pwcx",
+    "fields": {
+        "session_data": "YmZiZmI5NmViNWEyNTY1YzVmMDQ3MDNlNWExZDhmY2QwOTJiZDAxMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1NTJmZDM0MWY4NDg0NDIxN2E0MDQ0NzVmMDM3MjZkYmE0YjQzZDVkIn0=",
+        "expire_date": "2017-10-27T16:37:29.965Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "t197k5v1hx7ogkxbjm4xup2flpbbq9kv",
+    "fields": {
+        "session_data": "OGMwNTM3ZjUzYWFjYTFhYTc4NjM2Yjg0MWIwMjVhNmM3MmYxOGRiNDp7Im5leHQiOiIvdG91cm5hbWVudHMvMi8iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoiaHdZTTJvY1dsWXpYSUlJdnB0eUtxZjd5WlRSNklyMk4iLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InNvY2lhbF9jb3JlLmJhY2tlbmRzLmdvb2dsZS5Hb29nbGVPQXV0aDIiLCJfYXV0aF91c2VyX2hhc2giOiJlOTAwZWU0ZDM5ODU0MGUwODk2OWU1N2JmODNhNGU5YWYzYjY1M2MwIiwic29jaWFsX2F1dGhfbGFzdF9sb2dpbl9iYWNrZW5kIjoiZ29vZ2xlLW9hdXRoMiJ9",
+        "expire_date": "2017-10-11T20:38:45.858Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "uhhp95a888qqmwgry48yw6g1nflz93ql",
+    "fields": {
+        "session_data": "YzBmODU3YzI1OGY3M2M1MmQ0YTNjMzJjMjkyYWIyYWY0NzFhOGU3ZTp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6ImgzNHJPdkVwd0RXQ1NvakR6R3FORzlIUlVDM0ZGUDlEIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-19T19:58:59.520Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "vafcklzljl6xbdgyuare71vmc6xdbup3",
+    "fields": {
+        "session_data": "MjVkZmIyZjEyZGU2MjZkODY4ODkzNWQzOTFhNjU1NjJhODE5NjliNjp7Im5leHQiOiIvdG91cm5hbWVudHMvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6ImM3OGdMNkpOdlFiNWFMZ3ZpM2prc2loRkxzOEJMNGIzIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-17T01:58:48.505Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "vx3dv5n6tgrxxu6eh48ijsjaf0k7mosr",
+    "fields": {
+        "session_data": "NDQxZmIzNGQxZTZhMWVjNGU2NTIyZjEwMmRlMWZjOTRiYjYwNzZlMjp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6Ik9YNTBDTzNXc3FPOXowaUxmdk54b0FhdnZFd3dXNnVQIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-24T19:25:28.964Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "w92e1n4n9ikoa9x7560g22nht4451sin",
+    "fields": {
+        "session_data": "OGFjODE5YTQ1NzI2M2I3ZjA0ZWM3MmZjMTE3OTRiNThjMzg0NzYwNDp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6Iks1ZEYwVXpDRWNkZnlRTTBrSkpvaHZnQ0lDMTA1OXl3IiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-11T16:34:06.286Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "xta83mvuxburz24ackuqtdcakts9xsec",
+    "fields": {
+        "session_data": "ZjYwNmFkYWRhMTlmMDg0NTZiZDY0MGRmNDU0N2NmZTU1ZDUzOTRmYzp7Im5leHQiOiIvdG91cm5hbWVudHMvMi8iLCJnb29nbGUtb2F1dGgyX3N0YXRlIjoidElUVzZlTHREaFVGVDlyZVczQk10NlRwQWttQlVHdUQiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InNvY2lhbF9jb3JlLmJhY2tlbmRzLmdvb2dsZS5Hb29nbGVPQXV0aDIiLCJfYXV0aF91c2VyX2hhc2giOiJlOTAwZWU0ZDM5ODU0MGUwODk2OWU1N2JmODNhNGU5YWYzYjY1M2MwIiwic29jaWFsX2F1dGhfbGFzdF9sb2dpbl9iYWNrZW5kIjoiZ29vZ2xlLW9hdXRoMiJ9",
+        "expire_date": "2017-10-11T17:45:30.956Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "yqza1x8sii3inoqbw5x9nlcsu1yqka7x",
+    "fields": {
+        "session_data": "NzE3YTljNTNmNDhhMzQ4ZmZkNDFhN2FhYzEwYmFkMTQ3ZmVkYjNmODp7Im5leHQiOiIvIiwiZ29vZ2xlLW9hdXRoMl9zdGF0ZSI6IkcxeWhFSDNKU2c3R3lKUGJXWFpGY2tqdDhVb1dFV2hGIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJzb2NpYWxfY29yZS5iYWNrZW5kcy5nb29nbGUuR29vZ2xlT0F1dGgyIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTkwMGVlNGQzOTg1NDBlMDg5NjllNTdiZjgzYTRlOWFmM2I2NTNjMCIsInNvY2lhbF9hdXRoX2xhc3RfbG9naW5fYmFja2VuZCI6Imdvb2dsZS1vYXV0aDIifQ==",
+        "expire_date": "2017-10-25T17:35:26.732Z"
+    }
+}, {
+    "model": "champ_app.tournament",
+    "pk": 2,
+    "fields": {
+        "name": "Qualifying Tournament",
+        "abv": "RQ1",
+        "full": "S1 Radius Qualifying Tournament",
+        "active": false,
+        "pay": false,
+        "cost": null,
+        "server": 1,
+        "date": "2017-10-31",
+        "logo": "",
+        "Qualified": []
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 1,
+    "fields": {
+        "name": "Pop Fiction",
+        "captain": "Eldenn",
+        "player1": "Rattpack",
+        "player2": "Gasol",
+        "player3": "Anti-re",
+        "player4": "Homie",
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 2,
+    "fields": {
+        "name": "Test Team 0",
+        "captain": "test0",
+        "player1": "testA1",
+        "player2": "testA2",
+        "player3": "testA3",
+        "player4": "testA4",
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 3,
+    "fields": {
+        "name": "Test Team 1",
+        "captain": "test1",
+        "player1": "testB1",
+        "player2": "testB2",
+        "player3": "testB3",
+        "player4": "testB4",
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 4,
+    "fields": {
+        "name": "Test Team 2",
+        "captain": "test2",
+        "player1": "testC1",
+        "player2": "testC2",
+        "player3": "testC3",
+        "player4": "testC4",
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 5,
+    "fields": {
+        "name": "Test Team 3",
+        "captain": "test3",
+        "player1": "testD1",
+        "player2": "testD2",
+        "player3": "testD3",
+        "player4": "testD4",
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 6,
+    "fields": {
+        "name": "Test Team 4",
+        "captain": "test4",
+        "player1": "testE1",
+        "player2": "testE2",
+        "player3": "testE3",
+        "player4": "testE4",
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 7,
+    "fields": {
+        "name": "Test Team 5",
+        "captain": "test5",
+        "player1": "testF1",
+        "player2": "testF2",
+        "player3": "testF3",
+        "player4": "testF4",
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 8,
+    "fields": {
+        "name": "Test Team 6",
+        "captain": "test6",
+        "player1": "testG1",
+        "player2": "testG2",
+        "player3": "testG3",
+        "player4": "testG4",
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 9,
+    "fields": {
+        "name": "Test Team 7",
+        "captain": "t7",
+        "player1": null,
+        "player2": null,
+        "player3": null,
+        "player4": null,
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 10,
+    "fields": {
+        "name": "Test Team 8",
+        "captain": "t8",
+        "player1": null,
+        "player2": null,
+        "player3": null,
+        "player4": null,
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 11,
+    "fields": {
+        "name": "Test Team 9",
+        "captain": "t9",
+        "player1": null,
+        "player2": null,
+        "player3": null,
+        "player4": null,
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 12,
+    "fields": {
+        "name": "Test Team 10",
+        "captain": "t10",
+        "player1": null,
+        "player2": null,
+        "player3": null,
+        "player4": null,
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 13,
+    "fields": {
+        "name": "Test Team 11",
+        "captain": "t11",
+        "player1": null,
+        "player2": null,
+        "player3": null,
+        "player4": null,
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 14,
+    "fields": {
+        "name": "Test Team 12",
+        "captain": "t12",
+        "player1": null,
+        "player2": null,
+        "player3": null,
+        "player4": null,
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 15,
+    "fields": {
+        "name": "Test Team 13",
+        "captain": "t13",
+        "player1": null,
+        "player2": null,
+        "player3": null,
+        "player4": null,
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "champ_app.team",
+    "pk": 16,
+    "fields": {
+        "name": "Test Team 14",
+        "captain": "t14",
+        "player1": null,
+        "player2": null,
+        "player3": null,
+        "player4": null,
+        "server": 1,
+        "logo": "",
+        "tournaments": [2]
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 6,
+        "codename": "add_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 6,
+        "codename": "change_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 6,
+        "codename": "delete_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can add payment",
+        "content_type": 7,
+        "codename": "add_payment"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can change payment",
+        "content_type": 7,
+        "codename": "change_payment"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can delete payment",
+        "content_type": 7,
+        "codename": "delete_payment"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can add team",
+        "content_type": 8,
+        "codename": "add_team"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can change team",
+        "content_type": 8,
+        "codename": "change_team"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can delete team",
+        "content_type": 8,
+        "codename": "delete_team"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add tournament",
+        "content_type": 9,
+        "codename": "add_tournament"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change tournament",
+        "content_type": 9,
+        "codename": "change_tournament"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete tournament",
+        "content_type": 9,
+        "codename": "delete_tournament"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can add association",
+        "content_type": 10,
+        "codename": "add_association"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can change association",
+        "content_type": 10,
+        "codename": "change_association"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can delete association",
+        "content_type": 10,
+        "codename": "delete_association"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can add code",
+        "content_type": 11,
+        "codename": "add_code"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can change code",
+        "content_type": 11,
+        "codename": "change_code"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can delete code",
+        "content_type": 11,
+        "codename": "delete_code"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can add nonce",
+        "content_type": 12,
+        "codename": "add_nonce"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can change nonce",
+        "content_type": 12,
+        "codename": "change_nonce"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can delete nonce",
+        "content_type": 12,
+        "codename": "delete_nonce"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add user social auth",
+        "content_type": 13,
+        "codename": "add_usersocialauth"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change user social auth",
+        "content_type": 13,
+        "codename": "change_usersocialauth"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete user social auth",
+        "content_type": 13,
+        "codename": "delete_usersocialauth"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can add partial",
+        "content_type": 14,
+        "codename": "add_partial"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can change partial",
+        "content_type": 14,
+        "codename": "change_partial"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can delete partial",
+        "content_type": 14,
+        "codename": "delete_partial"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can add partial",
+        "content_type": 15,
+        "codename": "add_partial"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can change partial",
+        "content_type": 15,
+        "codename": "change_partial"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can delete partial",
+        "content_type": 15,
+        "codename": "delete_partial"
+    }
+}, {
+    "model": "champ_app.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$MdnZvt4jL4ME$DpSdOPgNbOZdMSHchqK6xV8737ubleGdZJP+jT5y9OY=",
+        "last_login": "2017-10-14T15:14:27.760Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-09-25T21:18:00.488Z",
+        "email": "admin@admin.com",
+        "team": null,
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "champ_app.user",
+    "pk": 2,
+    "fields": {
+        "password": "!DszbyjzEifEDPL5EURTK0WVzLTnF93DgKcQVfIjn",
+        "last_login": "2017-10-14T15:13:53.815Z",
+        "is_superuser": false,
+        "username": "mcbride.lucas9",
+        "first_name": "Lucas",
+        "last_name": "McBride",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-09-25T21:18:48.987Z",
+        "email": "mcbride.lucas9@gmail.com",
+        "team": 1,
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "champ_app.user",
+    "pk": 3,
+    "fields": {
+        "password": "!9fhWNgGLNZ0s9pbUwY3dVDcJQvU9aHgOBivGaytR",
+        "last_login": "2017-10-10T22:21:47.880Z",
+        "is_superuser": false,
+        "username": "mcbride9",
+        "first_name": "Lucas",
+        "last_name": "Mcbride",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-10-04T21:00:20Z",
+        "email": "mcbride9@bu.edu",
+        "team": 8,
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "champ_app.user",
+    "pk": 4,
+    "fields": {
+        "password": "cargo111",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test0",
+        "first_name": "Test",
+        "last_name": "Account",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-10-10T17:39:56Z",
+        "email": "test0@test.com",
+        "team": 2,
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "champ_app.user",
+    "pk": 5,
+    "fields": {
+        "password": "cargo111",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test1",
+        "first_name": "Test",
+        "last_name": "Account",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-10-10T17:42:22Z",
+        "email": "test1@test.com",
+        "team": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "champ_app.user",
+    "pk": 6,
+    "fields": {
+        "password": "cargo111",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test2",
+        "first_name": "Test",
+        "last_name": "Account",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-10-10T17:44:19Z",
+        "email": "test2@test.com",
+        "team": 4,
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "champ_app.user",
+    "pk": 7,
+    "fields": {
+        "password": "cargo111",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test3",
+        "first_name": "Test",
+        "last_name": "Account",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-10-10T17:45:07Z",
+        "email": "test3@test.com",
+        "team": 5,
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "champ_app.user",
+    "pk": 8,
+    "fields": {
+        "password": "cargo111",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test4",
+        "first_name": "Test",
+        "last_name": "Account",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-10-10T17:45:59Z",
+        "email": "test4@test.com",
+        "team": 6,
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "champ_app.user",
+    "pk": 9,
+    "fields": {
+        "password": "cargo111",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test5",
+        "first_name": "Test",
+        "last_name": "Account",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-10-10T17:46:57Z",
+        "email": "test5@test.com",
+        "team": 7,
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "social_django.usersocialauth",
+    "pk": 1,
+    "fields": {
+        "user": 2,
+        "provider": "google-oauth2",
+        "uid": "mcbride.lucas9@gmail.com",
+        "extra_data": "{\"auth_time\": 1507994033, \"expires\": 3600, \"token_type\": \"Bearer\", \"access_token\": \"ya29.GlvkBCbH3-URZJJliZqMYS3doIFFS4_TQXyvV-vIYeB9-weg7J8Vqt5RWBK3KlNYXF1_Z-CzksWKYU4bJBhximUO4-j15d8g5fRNgYlvStbYSvVLNXPoKKmOIm7G\"}"
+    }
+}, {
+    "model": "social_django.usersocialauth",
+    "pk": 2,
+    "fields": {
+        "user": 3,
+        "provider": "google-oauth2",
+        "uid": "mcbride9@bu.edu",
+        "extra_data": "{\"auth_time\": 1507674107, \"expires\": 3599, \"token_type\": \"Bearer\", \"access_token\": \"ya29.GlvgBLGmFcTId2zGymqXAstzhorUSKb8WwtPFIVM3TSJZK9v6gtnEmOTeZBOSoLRr_bLYcAXcmPI2SYreb2R1aH7lUHey9L5frXYUpNZr_gjIlmjsazcllRCsu4L\"}"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2017-09-25T21:18:42.476Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Legendary Tournament",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2017-09-27T15:11:27.671Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Qualifying Tournament",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2017-09-27T15:12:01.374Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Qualifying Tournament",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2017-09-27T15:12:29.543Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Qualifying Tournament",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2017-10-10T17:40:33.075Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "test1@test.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2017-10-10T17:41:05.269Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "test0@test.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"email\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2017-10-10T17:42:02.647Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Test Team 0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2017-10-10T17:42:05.326Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "test0@test.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"team\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2017-10-10T17:43:51.256Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Test Team 1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2017-10-10T17:43:53.303Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "5",
+        "object_repr": "test1@test.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2017-10-10T17:44:13.692Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Test Team 0",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"player1\", \"player2\", \"player3\", \"player4\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2017-10-10T17:45:01.151Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Test Team 2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2017-10-10T17:45:07.320Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "6",
+        "object_repr": "test2@test.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2017-10-10T17:45:57.153Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Test Team 3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2017-10-10T17:45:59.561Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "test3@test.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2017-10-10T17:46:54.800Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Test Team 4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2017-10-10T17:46:57.280Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "8",
+        "object_repr": "test4@test.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2017-10-10T17:48:02.525Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "Test Team 5",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2017-10-10T17:48:13.913Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "9",
+        "object_repr": "test5@test.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2017-10-10T19:21:06.050Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "Test Team 6",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2017-10-10T19:21:10.654Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "10",
+        "object_repr": "test6@test.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2017-10-10T19:22:38.640Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Test Team 7",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2017-10-10T19:22:40.465Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "11",
+        "object_repr": "test7@test.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2017-10-10T20:58:12.426Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "11",
+        "object_repr": "test7@test.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2017-10-10T20:58:28.610Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "3",
+        "object_repr": "mcbride9@bu.edu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"team\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2017-10-10T20:59:05.804Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Test Team 7",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2017-10-10T20:59:13.290Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "10",
+        "object_repr": "test6@test.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2017-10-10T20:59:20.338Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "3",
+        "object_repr": "mcbride9@bu.edu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"team\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2017-10-10T21:19:42.307Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "S1 Sphere Qualifying Tournament",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2017-10-10T21:19:42.324Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "S1 Centra Qualifying Tournament",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2017-10-10T21:19:42.341Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "S1 Sphere Legendary Tournament",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2017-10-10T21:19:51.537Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "PAY-82P41077VB5712324LHF4NCQ",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2017-10-10T21:20:23.582Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Pop Fiction",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2017-10-10T22:21:44.175Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "S1 Radius Qualifying Tournament",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"active\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2017-10-11T16:52:41.826Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "S1 Radius Qualifying Tournament",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"abv\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2017-10-11T17:33:50.102Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "S1 Radius Qualifying Tournament",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"date\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2017-10-13T02:09:18.450Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "S1 Radius Qualifying Tournament",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"abv\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2017-10-13T15:06:20.227Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "S1 Radius Qualifying Tournament",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"active\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2017-10-13T15:19:32.299Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Test Team 7",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2017-10-13T15:19:39.280Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Test Team 8",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2017-10-13T15:19:47.448Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "11",
+        "object_repr": "Test Team 9",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2017-10-13T15:19:56.449Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "Test Team 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2017-10-13T15:20:02.980Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "13",
+        "object_repr": "Test Team 11",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2017-10-13T15:20:10.540Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "14",
+        "object_repr": "Test Team 12",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2017-10-13T15:20:18.279Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "15",
+        "object_repr": "Test Team 13",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2017-10-13T15:20:27.032Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "16",
+        "object_repr": "Test Team 14",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2017-10-13T16:10:24Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Pop Fiction",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"games\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2017-10-13T16:30:11.123Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "S1 Radius Qualifying Tournament",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"active\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2017-10-14T15:06:21.545Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "RQ1:G1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2017-10-14T15:06:57.082Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "RQ1:G13",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2017-10-14T15:16:10.713Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "S1 Radius Qualifying Tournament",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"active\"]}}]"
+    }
+}]

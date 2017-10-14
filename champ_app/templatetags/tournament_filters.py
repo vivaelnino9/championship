@@ -22,3 +22,10 @@ def server_city(server):
 def can_signup(user,tournament):
     if user.is_anonymous() or user.team is None: return False
     return not user.team.is_signed_up(tournament)
+
+# Submit Page
+
+@register.filter(name='get_tournament_full')
+# get tournament full from tournament id for submit page
+def get_tournament_full(tournament_id):
+    return Tournament.objects.get(pk=tournament_id).full

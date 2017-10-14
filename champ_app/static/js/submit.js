@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  $('#form-submit').click(function(){
-    $('#submit-form').hide()
+  $('#submit-form').submit(function(){
+    $(this).hide()
     $('#waiting-footer').show()
   })
 });

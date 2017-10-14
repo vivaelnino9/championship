@@ -1,6 +1,8 @@
 import datetime
+import json
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.db.models import Q
 
 from .choices import *
 
@@ -107,10 +109,13 @@ class Team(models.Model):
     )
 
     class Meta:
-        db_table = "rosters"
+        db_table = "teams"
 
     def __str__(self):
         return self.name
+
+    def get_unsubmitted_game(self,tournament):
+        return Game.objects.filter(Q(team1=self)|Q(team2=self),tournament=tournament).exclude(status=3)
 
     def get_players(self,include_fields):
         # get players on team, specify wether returned result needs to be in a
@@ -133,6 +138,53 @@ class Team(models.Model):
     def is_signed_up(self,tournament):
         # check if team is signed up for tournament
         return self in tournament.team_set.all()
+
+class Game(models.Model):
+    number = models.CharField(verbose_name="Game #",max_length=50)
+    team1 = models.ForeignKey(
+        Team,
+        related_name="team1",
+        verbose_name="Team 1",
+        blank=True,null=True
+    )
+    team2 = models.ForeignKey(
+        Team,
+        related_name="team2",
+        verbose_name="Team 2",
+        blank=True,null=True
+    )
+    row = models.PositiveIntegerField(verbose_name="Row #")
+    winner_col = models.PositiveIntegerField(verbose_name="Winner Column #")
+    loser_col = models.PositiveIntegerField(verbose_name="Loser Column #")
+    winner = models.ForeignKey(
+        Team,
+        related_name="winner",
+        verbose_name="Winner",
+        blank=True,null=True
+    )
+    loser = models.ForeignKey(
+        Team,
+        related_name="loser",
+        verbose_name="Loser",
+        blank=True,null=True
+    )
+    tournament = models.ForeignKey(
+        Tournament,
+        verbose_name="Tournament",
+        on_delete=models.CASCADE
+    )
+    status = models.IntegerField(
+        verbose_name="Status",
+        choices=STATUS_CHOICES,
+        default=1
+    )
+
+    class Meta:
+        db_table = "games"
+
+    def __str__(self):
+        s = self.tournament.abv + ':G' + self.number
+        return s
 
 class User(AbstractUser):
     email = models.EmailField(verbose_name="Email",max_length=255)

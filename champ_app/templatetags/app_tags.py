@@ -12,6 +12,7 @@ register = template.Library()
 @register.simple_tag(name='get_leaders')
 # get stats for leaderboards
 def get_leaders():
+    return False
     return get_season_leaders()
 
 # Roster Table
@@ -94,17 +95,16 @@ def paypal_payment_link(context,tournament):
     return link
 
 # Submit Page
-@register.simple_tag(name='get_submit_game',takes_context=True)
-def get_submit_game(context):
+@register.simple_tag(name='get_latest_game',takes_context=True)
+def get_latest_game(context):
     request = context['request']
     user = request.user
     if user.is_anonymous(): return False
-    tournament = user.team.tournaments.filter(active=True)
+    team = user.team
+    tournament = team.tournaments.filter(active=True)
     if tournament.exists():
         tournament = tournament.first()
-        game = find_game(tournament.abv,user.team)
-        if not game: return False
-        game['tournament'] = tournament
+        game = check_for_game(team,tournament)
         return game
     else:
         return False

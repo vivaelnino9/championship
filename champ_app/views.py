@@ -35,15 +35,11 @@ def submit(request):
     if request.method == 'POST':
         form = SubmitForm(request.POST)
         if form.is_valid():
-            games = get_games(form)
-            winner_loser = {
-                'winner_row':request.POST['winner_row'],
-                'winner_col': request.POST['winner_col'],
-                'loser_row': request.POST['loser_row'],
-                'loser_col': request.POST['loser_col']
-            }
-            games.update(winner_loser)
-            process_games(games)
+            game_number = request.POST['game_number']
+            game_links = get_game_links(form)
+            game = Game.objects.get(number=game_number)
+            set_winner_loser(game,game_links)
+            submit_game(game,game_links)
             return HttpResponseRedirect(reverse('submit'))
     else:
         form = SubmitForm()
@@ -88,6 +84,10 @@ def tournament_signup(request,tournament_id,team_name,action):
 
     return HttpResponseRedirect(reverse('tournament_page',kwargs={'tournament_id':tournament_id}))
 
+def tournament_activate(request,tournament_id):
+    tournament = Tournament.objects.get(pk=tournament_id)
+    activate_tournament(tournament)
+    return  HttpResponseRedirect(reverse("admin:champ_app_tournament_changelist"))
 
 def roster_change(request):
     team_name = request.GET.get('team_name', None)
@@ -143,20 +143,25 @@ def change_roster(team_name,new_players):
         else: pass
     if new_players: edit_roster(team_name,new_players)
 
-def get_games(form):
+def get_game_links(form):
     games = {}
     for field in form.cleaned_data:
         value = form.cleaned_data[field]
         if value != '': games[field] = value
     return games
 
+def set_winner_loser(game,game_links):
+    game.winner = Team.objects.get(name=game_links['winner'])
+    game.loser = Team.objects.get(name=game_links['loser'])
+    game.save()
+
 def add_tournament(team,tournament):
-    enter_signup(team.name,tournament.abv) # spreadsheet.py
+    enter_signup(team,tournament) # spreadsheet.py
     team.tournaments.add(tournament)
     if tournament.pay: add_payment(team,tournament)
 
 def remove_tournament(team,tournament):
-    remove_signup(team.name,tournament.abv) # spreadsheet.py
+    remove_signup(team,tournament) # spreadsheet.py
     team.tournaments.remove(tournament)
     if tournament.pay: remove_payment(team,tournament)
 

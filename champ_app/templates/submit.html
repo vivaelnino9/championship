@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
-{% load staticfiles team_filters app_tags %}
+{% load staticfiles team_filters tournament_filters app_tags %}
 {% block content %}
-{% get_submit_game as game %}
+{% get_latest_game as game %}
 {% if game %}
 <div class="card">
   <div class="card-block">
     <h4 class="card-title">{{ game.team1 }}&nbsp;vs.&nbsp;{{ game.team2 }}</h4>
-    <h6 class="card-subtitle mb-2 text-muted">{{ game.tournament.full }}</h6>
-    <p class="card-text">Game #{{ game.game }}</p>
+    <h6 class="card-subtitle mb-2 text-muted">{{ game.tournament_id|get_tournament_full }}</h6>
+    <p class="card-text">Game #{{ game.number }}</p>
   </div>
   <div class="card-footer text-muted" id="waiting-footer" style="display:none;">
     <p>Please wait, this may take a minute!</p>
@@ -35,10 +35,7 @@
     </div>
   </div>
   {% endfor %}
-  <input type="hidden" name="winner_row" class="form-control" value="{{ game.winner.row }}" />
-  <input type="hidden" name="winner_col" class="form-control" value="{{ game.winner.col }}" />
-  <input type="hidden" name="loser_row" class="form-control" value="{{ game.loser.row }}" />
-  <input type="hidden" name="loser_col" class="form-control" value="{{ game.loser.col }}" />
+  <input type="hidden" name="game_number" class="form-control" value="{{ game.number }}" />
   <button id="form-submit" class="card-button btn btn-primary" type="submit">Submit</button>
 </form>
 {% else %}
