@@ -15,7 +15,7 @@ from .spreadsheet import *
 def index(request):
     next_tournament = Tournament.objects.filter(date__gt=datetime.date.today()).order_by("date").first()
     return render(request,'index.html',{
-        'next_tournament':next_tournament
+        'next_tournament':next_tournament,
     })
 
 def rules(request):

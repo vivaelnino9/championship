@@ -15,7 +15,8 @@ class Tournament(models.Model):
     cost = models.CharField(
         verbose_name="Cost",
         max_length=10,
-        blank=True,null=True)
+        blank=True,null=True
+    )
     server = models.IntegerField(
         verbose_name="Server",
         choices=SERVER_CHOICES,
@@ -31,6 +32,10 @@ class Tournament(models.Model):
         "champ_app.Team",
         verbose_name="Qualified Teams",
         blank=True
+    )
+    bracket_id = models.CharField(
+        verbose_name="Bracket ID",
+        max_length=50,
     )
 
     class Meta:

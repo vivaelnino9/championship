@@ -291,7 +291,8 @@
         "server": 1,
         "date": "2017-10-31",
         "logo": "",
-        "Qualified": []
+        "Qualified": [],
+        "bracket_id": "106721"
     }
 }, {
     "model": "champ_app.team",
