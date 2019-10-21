@@ -8,7 +8,7 @@ cryptography==2.0.3
 decorator==4.1.2
 defusedxml==0.5.0
 dj-database-url==0.4.2
-Django==1.11.4
+Django==1.11.23
 enum34==1.1.6
 gspread==0.6.2
 gunicorn==19.7.1
