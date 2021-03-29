@@ -30,7 +30,7 @@ ptyprocess==0.5.2
 pyasn1==0.3.4
 pyasn1-modules==0.1.4
 pycparser==2.18
-Pygments==2.2.0
+Pygments==2.7.4
 PyJWT==1.5.2
 pyOpenSSL==17.2.0
 python3-openid==3.1.0
